@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# KiCad — Backups und Autosaves
+*-backups/
+_autosave-*
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+~*.*
+
+# KiCad — lokale Einstellungen und Caches
+*.kicad_prl
+fp-info-cache
+*.lck
+
+# KiCad — generierte Exporte
+*.net
+*.dsn
+*.ses
+
+# Fertigungsdaten (bei Bedarf auskommentieren)
+# gerbers/
+# jlcpcb/
