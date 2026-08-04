@@ -69,20 +69,17 @@ Sag Bescheid, dann verdrahte ich sie.
 
 ## Teil 5 — Nächste Schritte, in dieser Reihenfolge
 
-1. **ERC-Textbericht an mich** — damit ich sehe, was KiCad beanstandet, das meine eigenen
-   Prüfungen strukturell nicht finden können.
-2. **SWD-Programmierheader ergänzen.** Echter Blocker: ohne ihn lässt sich der SAMD21 nicht
-   flashen. Das Referenzdesign hat nur unbestückte Testpads, weil Arduino werkseitig programmiert.
-   Braucht 5 Pins: SWCLK, SWDIO, RESET, +3V3, GND.
-3. **USB-C-Bauteil festlegen.** Der Footprint ist noch Platzhalter (`TBD_USBC_CONNECTOR`).
-   Mit einer JLCPCB-Teilenummer oder einem Datenblatt baue ich den echten Footprint.
-4. **Sensors_Storage-Blatt** (MPU-6050, MicroSD, e-Paper-Stecker, Status-LEDs).
-   Der SPI-Bus liegt bereits als blattübergreifendes Netz bereit.
-5. **Footprints allen Bauteilen zuweisen**, dann Netzliste erzeugen.
-6. **Erst danach PCB-Layout.**
+~~2. **SWD-Programmierheader ergänzen.**~~ ✓ erledigt — CONN_SWD_1x5 in MCU_Radio
 
-Ich würde Punkt 1 und 2 vorziehen, bevor wir das vierte Blatt bauen — sonst schleppen wir
-mögliche Fehler in noch mehr Material mit.
+~~4. **Sensors_Storage-Blatt**~~ ✓ erledigt — MPU-6050, MicroSD, e-Paper, Status-LEDs vorhanden
+
+Offen:
+
+1. **ERC-Textbericht** — KiCad öffnen, ERC laufen lassen, Bericht als Textdatei speichern und hier einchecken.
+2. **USB-C-Bauteil festlegen.** Der Footprint ist noch Platzhalter (`TBD_USBC_CONNECTOR`).
+   Mit einer JLCPCB-Teilenummer oder einem Datenblatt kann der echte Footprint ergänzt werden.
+3. **Footprints allen Bauteilen zuweisen** (`Werkzeuge → Eigenschaften bearbeiten`), dann Netzliste erzeugen.
+4. **Erst danach PCB-Layout.**
 
 ## Teil 6 — Wie du mir am besten Rückmeldung gibst
 

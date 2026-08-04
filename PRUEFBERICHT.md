@@ -197,12 +197,12 @@ GEO_STAT→R25→R13→D4).
 
 ## Was noch offen ist
 
-1. **Sensors_Storage-Blatt** fehlt (MPU-6050, MicroSD, e-Paper-Stecker, Status-LEDs)
-2. **SWD-Programmierheader** fehlt — ohne ihn lässt sich der SAMD21 nicht flashen
+1. ~~**Sensors_Storage-Blatt** fehlt~~ ✓ erledigt — MPU-6050 (U7), MicroSD (J11), e-Paper-Stecker (J10), 3× Status-LEDs (DL10–12) vorhanden
+2. ~~**SWD-Programmierheader** fehlt~~ ✓ erledigt — CONN_SWD_1x5 in MCU_Radio.kicad_sch
 3. **USB-C-Footprint** ist noch Platzhalter (`TBD_USBC_CONNECTOR`) — braucht ein konkretes Bauteil
-4. **ERC** in KiCad noch nicht gelaufen
-5. Der SPI-Bus (`SPI_MOSI`/`SPI_SCK`/`SPI_MISO`, SAMD21 PA16/PA17/PA19) ist jetzt als
-   blattübergreifendes Netz herausgeführt und wartet auf das Sensors_Storage-Blatt
+4. **Footprints zuweisen** — Großteil der Passiven (R, C, D, L) und einige Stecker haben noch kein Footprint im Schaltplan-Instanz
+5. **ERC** in KiCad noch nicht gelaufen
+6. **PCB-Layout**: erst nach ERC und vollständiger Footprint-Zuweisung sinnvoll
 
 ## Automatische Verbindungsprüfung
 
