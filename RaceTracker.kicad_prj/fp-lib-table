@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "RaceTracker")(type "KiCad")(uri "${KIPRJMOD}/RaceTracker.pretty")(options "")(descr "Race Tracker Platine - projektlokale Footprints (echte Pad-Geometrie aus Arduino .brd)"))
+)

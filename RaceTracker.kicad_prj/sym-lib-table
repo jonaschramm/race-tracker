@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "RaceTracker")(type "KiCad")(uri "${KIPRJMOD}/RaceTracker.kicad_sym")(options "")(descr "Race Tracker Platine - projektlokale Symbole aus Arduino/SparkFun-Referenzdaten"))
+)
