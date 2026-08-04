@@ -4066,7 +4066,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 40.64) (xy 223.52 40.64)
+			(xy 193.04 40.64) (xy 223.52 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4096,13 +4096,39 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 46.99) (xy 22.86 46.99)
+			(xy 20.32 46.99) (xy 22.86 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "87ecf151-993d-4b31-af51-5c648cc06470")
+	)
+	(wire
+		(pts
+			(xy 17.78 36.83) (xy 17.78 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8891d8dc-585a-4d9f-9e9f-fd074d842b3f")
+	)
+	(wire
+		(pts
+			(xy 22.86 29.21) (xy 22.86 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48eb78fa-5654-43db-b6f3-e5a4bc68ca1f")
+	)
+	(junction
+		(at 17.78 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05d3bd04-8dc7-4533-bff7-39acd7004790")
 	)
 	(wire
 		(pts
@@ -9154,6 +9180,158 @@
 			(project "RaceTracker"
 				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 20.32 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "99cfb425-4bf1-46b5-b288-f1661994f9a9")
+		(property "Reference" "C34"
+			(at 20.32 24.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1uF VBUS decoupling"
+			(at 20.32 33.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 20.32 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d02f2c47-8f89-4c8c-9d61-2e3f5a7b9c01")
+		)
+		(pin "2"
+			(uuid "d02f2c47-8f89-4c8c-9d61-2e3f5a7b9c02")
+		)
+		(instances
+			(project "RaceTracker"
+				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:GND")
+		(at 22.86 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "47819a3a-92c0-4969-8a9f-fae1b0149c57")
+		(property "Reference" "#PWR102"
+			(at 22.86 41.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 13.86 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.4 1.4)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 22.86 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b061efb8-dfc8-4bae-aaab-0f5ce2a15ded")
+		)
+		(instances
+			(project "RaceTracker"
+				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
+					(reference "#PWR102")
 					(unit 1)
 				)
 			)
