@@ -1749,13 +1749,33 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 50.8) (xy 20.32 77.47)
+			(xy 13.97 50.8) (xy 20.32 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4908acb8-2ba4-4eba-9b01-8c1174298700")
+		(uuid "e8fb7fd3-94db-4784-82e6-b2598c9598be")
+	)
+	(wire
+		(pts
+			(xy 20.32 55.88) (xy 20.32 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49af1524-a5fb-4c6a-948f-baacb2e0b240")
+	)
+	(wire
+		(pts
+			(xy 13.97 58.42) (xy 20.32 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5440ae83-3c03-4bcb-9686-b335c9199b87")
 	)
 	(wire
 		(pts
@@ -4874,6 +4894,154 @@
 			(project "RaceTracker"
 				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/c38cb3c4-50cf-488f-b4da-82cd6a0246af"
 					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:GND")
+		(at 13.97 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "abf6b08d-2de2-452b-a944-c1ba741c1e6d")
+		(property "Reference" "#PWR100"
+			(at 13.97 57.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 4.97 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.4 1.4)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 13.97 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 13.97 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 13.97 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a2564d4-e6ba-45f2-8493-f59d485efc1f")
+		)
+		(instances
+			(project "RaceTracker"
+				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/c38cb3c4-50cf-488f-b4da-82cd6a0246af"
+					(reference "#PWR100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:GND")
+		(at 13.97 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0d3c307d-8fa0-4f2b-b510-26fb8ec86436")
+		(property "Reference" "#PWR101"
+			(at 13.97 65.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 4.97 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.4 1.4)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 13.97 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 13.97 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 13.97 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce564b67-d8cc-4810-b2c9-42c39e529b68")
+		)
+		(instances
+			(project "RaceTracker"
+				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/c38cb3c4-50cf-488f-b4da-82cd6a0246af"
+					(reference "#PWR101")
 					(unit 1)
 				)
 			)

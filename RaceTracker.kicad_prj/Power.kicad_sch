@@ -3956,13 +3956,13 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 41.91) (xy 20.32 59.69)
+			(xy 12.7 41.91) (xy 20.32 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "77bf7ac0-40a0-46c5-9768-6a6edb791b8c")
+		(uuid "b4e5f6a7-c8d9-4e0f-a1b2-c3d4e5f60001")
 	)
 	(wire
 		(pts
@@ -9844,6 +9844,80 @@
 			(project "RaceTracker"
 				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:GND")
+		(at 12.7 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b4e5f6a7-c8d9-4e0f-a1b2-c3d4e5f60002")
+		(property "Reference" "#PWR042"
+			(at 12.7 48.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 3.7 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.4 1.4)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 12.7 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 12.7 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 12.7 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4e5f6a7-c8d9-4e0f-a1b2-c3d4e5f60003")
+		)
+		(instances
+			(project "RaceTracker"
+				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
