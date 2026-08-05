@@ -8281,6 +8281,26 @@
 		)
 		(uuid "e934e96d-32fd-44e2-98fc-8be9c4d8b66f")
 	)
+	(label "USBC_VBUS"
+		(at 33.02 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5373e42-cf2e-47a9-894f-c3fa714bdd92")
+	)
+	(wire
+		(pts
+			(xy 27.94 29.21) (xy 27.94 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d2811df-97a5-4165-92a6-32e8019bff4a")
+	)
 	(wire
 		(pts
 			(xy 30.48 236.22) (xy 30.48 241.3)
@@ -8444,6 +8464,80 @@
 			(project "RaceTracker"
 				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
 					(reference "#PWR104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:GND")
+		(at 27.94 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2cd730f7-a29d-4748-bd85-6e346f611a75")
+		(property "Reference" "#PWR105"
+			(at 27.94 41.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 18.94 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.4 1.4)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f081adbf-e8e1-45aa-80b4-c4691fe4e043")
+		)
+		(instances
+			(project "RaceTracker"
+				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
+					(reference "#PWR105")
 					(unit 1)
 				)
 			)
@@ -10309,6 +10403,106 @@
 			(project "RaceTracker"
 				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
 					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:DIODE_AC")
+		(at 30.48 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3084667-f8c1-4648-98f8-d8d3b49ac108")
+		(property "Reference" "D4"
+			(at 30.48 24.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "PESD5V0S1BA TVS VBUS"
+			(at 30.48 33.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 30.48 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PESD5V0S1BA"
+			(at 30.48 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 30.48 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "f00215b1-60ee-40d2-a736-708ddebcc144")
+		)
+		(pin "C"
+			(uuid "b3f8bef1-c1e7-4eca-a10f-97835d0bc7bd")
+		)
+		(instances
+			(project "RaceTracker"
+				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/48e8423c-d46f-487f-85bb-35381b682ff2"
+					(reference "D4")
 					(unit 1)
 				)
 			)
