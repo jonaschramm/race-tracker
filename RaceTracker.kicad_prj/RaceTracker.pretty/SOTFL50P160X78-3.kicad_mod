@@ -234,7 +234,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(layer "F.CrtYd")
+			(layer "F.Fab")
 			(uuid "82bf24bc-570e-4407-9e00-947c773657c1")
 		)
 		(fp_line
@@ -244,7 +244,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(layer "F.CrtYd")
+			(layer "F.Fab")
 			(uuid "edf28204-a168-4118-8041-1182f3cf9ccc")
 		)
 		(fp_line
@@ -315,7 +315,7 @@
 				(type solid)
 			)
 			(fill no)
-			(layer "F.CrtYd")
+			(layer "F.Fab")
 			(uuid "1d0e0001-c2a2-41ef-bcc0-d931713efb79")
 		)
 		(fp_line

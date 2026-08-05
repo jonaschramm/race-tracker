@@ -2,6 +2,8 @@
   (attr smd)
   (fp_text reference "REF**" (at 0 -4) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
   (fp_text value "ZED_F9P_LGA102" (at 0 4) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))
+  (fp_rect (start -10.96 -8.46) (end 10.96 8.46)
+    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
   (pad "1" smd rect (at -7.1500 7.4500 90) (size 1.5200 0.8500)
     (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "2" smd rect (at -6.0500 7.4500 90) (size 1.5200 0.8500)
