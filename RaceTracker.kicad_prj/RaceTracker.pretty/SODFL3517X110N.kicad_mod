@@ -1,0 +1,231 @@
+(footprint "SODFL3517X110N" (version 20240108) (generator "kicad_eagle_import") (generator_version "10.0")
+		(layer "F.Cu")
+		(descr "Small Outline Diode Flat Lead (SODFL); 2.60 mm L X 1.70 mm W X 1.10 mm H body\n\nPCB Libraries Packages")
+		(property "Reference" "D3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "7a003a1d-a729-4ff7-a61d-d9ea000f6c09")
+			(effects
+				(font
+					(size 0.637 0.637)
+					(thickness 0.063)
+				)
+			)
+		)
+		(property "Value" "PMEG6020"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb1f04e7-c682-4231-a872-05f1c08c8f49")
+			(effects
+				(font
+					(size 1.08 1.08)
+					(thickness 0.12)
+				)
+				(justify right top)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cd6956e-08a1-40dc-8617-4c4af0c90c3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2da39b70-03d7-472a-b3eb-220e8ca6f6fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 1.3 -0.95)
+			(end -2.24 -0.95)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "90102a34-abd1-4307-bf52-7278c23d986e")
+		)
+		(fp_line
+			(start -2.24 0.95)
+			(end 1.3 0.95)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8f9246e6-6bb4-41a8-a800-dab5afff6d0d")
+		)
+		(fp_line
+			(start -2.24 -0.95)
+			(end -2.24 0.95)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "766b43b6-46fb-4b50-b187-e68d3d9555bc")
+		)
+		(fp_line
+			(start 2.3 1.1)
+			(end -2.3 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "afe7fb1f-c630-4be9-83ec-f66d254d117c")
+		)
+		(fp_line
+			(start 2.3 -1.1)
+			(end 2.3 1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "097f40ba-e1f9-4746-bf15-cb9ed7f1ba8b")
+		)
+		(fp_line
+			(start 0.35 0)
+			(end -0.35 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b9c9b067-44ad-4ed7-b6a0-3f4462c45213")
+		)
+		(fp_line
+			(start 0 -0.35)
+			(end 0 0.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "db377f26-dced-417b-b752-95603958bad1")
+		)
+		(fp_line
+			(start -2.3 1.1)
+			(end -2.3 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9fe93a4f-bb85-4786-8781-1dde7f173ed9")
+		)
+		(fp_line
+			(start -2.3 -1.1)
+			(end 2.3 -1.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "42098d01-ef0a-4422-91de-4f19b8dd044b")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.25 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "e47c951b-cd3b-4189-b457-897c8ccb7687")
+		)
+		(fp_line
+			(start 1.4 0.95)
+			(end -1.4 0.95)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f56941b5-5b04-4398-9a41-d87125f6272f")
+		)
+		(fp_line
+			(start 1.4 -0.95)
+			(end 1.4 0.95)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2c178d71-74b1-4e1d-825d-2c4fb594a286")
+		)
+		(fp_line
+			(start -1.4 0.95)
+			(end -1.4 -0.95)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "eaad7f05-9fe2-4c16-8f48-fc1d8a8a9cbb")
+		)
+		(fp_line
+			(start -1.4 -0.95)
+			(end 1.4 -0.95)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cb521027-35c9-4716-8927-822d9a8b00a2")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 180)
+			(layer "F.SilkS")
+			(uuid "4fe2e9fb-62b2-4f6c-b4a2-0482229f11a7")
+			(effects
+				(font
+					(size 1.08 1.08)
+					(thickness 0.12)
+				)
+				(justify left bottom)
+			)
+		)
+		(pad "A" smd roundrect
+			(at 1.605 0 180)
+			(size 0.91 1.07)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.01)
+			(solder_mask_margin 0.1016)
+			(solder_paste_margin 0)
+			(zone_connect 2)
+			(thermal_bridge_angle 0)
+			(uuid "dc6bd8d1-4880-47d9-8602-ab4d174f5b33")
+		)
+		(pad "C" smd roundrect
+			(at -1.605 0)
+			(size 0.91 1.07)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.01)
+			(solder_mask_margin 0.1016)
+			(solder_paste_margin 0)
+			(zone_connect 2)
+			(thermal_bridge_angle 0)
+			(uuid "aa905c36-a9d7-4dd1-a4a9-53cb6321bbf1")
+		)
+		(embedded_fonts no)
+	)
