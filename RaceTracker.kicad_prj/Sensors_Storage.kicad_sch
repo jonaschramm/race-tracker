@@ -3077,7 +3077,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 109.22 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3155,7 +3155,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 236.22 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3233,7 +3233,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 134.62 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3311,7 +3311,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 35.56 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3407,7 +3407,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3485,7 +3485,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 276.86 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3637,7 +3637,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 53.34 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3715,7 +3715,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Card:microSD_HC_Molex_104031-0811"
 			(at 142.24 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3817,7 +3817,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 175.26 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3969,7 +3969,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 68.58 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4047,7 +4047,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:LED_0603_AK"
 			(at 73.66 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4199,7 +4199,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 175.26 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4277,7 +4277,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4355,7 +4355,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm"
 			(at 35.56 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4466,7 +4466,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 88.9 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4544,7 +4544,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 195.58 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4622,7 +4622,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:LED_0603_AK"
 			(at 154.94 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4700,7 +4700,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 215.9 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4778,7 +4778,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:LED_0603_AK"
 			(at 114.3 115.57 0)
 			(hide yes)
 			(show_name no)

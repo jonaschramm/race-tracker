@@ -4380,7 +4380,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 109.22 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4532,7 +4532,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:LED_0603_AK"
 			(at 165.1 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4610,7 +4610,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 251.46 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4688,7 +4688,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 124.46 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4766,7 +4766,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:SMA_EDGE"
 			(at 190.5 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4853,7 +4853,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 149.86 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4931,7 +4931,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 144.78 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5009,7 +5009,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 88.9 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5087,7 +5087,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 231.14 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5165,7 +5165,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:ML414H_COIN_CELL"
 			(at 210.82 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5243,7 +5243,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:LED_0603_AK"
 			(at 226.06 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5321,7 +5321,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 205.74 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5399,7 +5399,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 68.58 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5551,7 +5551,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 129.54 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5629,7 +5629,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 22.86 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5707,7 +5707,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 185.42 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5785,7 +5785,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 170.18 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5863,7 +5863,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 63.5 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5941,7 +5941,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:SODFL3517X110N"
 			(at 271.78 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6019,7 +6019,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:LED_0603_AK"
 			(at 104.14 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -6171,7 +6171,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RaceTracker:ZED_F9P_LGA102"
 			(at 35.56 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6560,7 +6560,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 83.82 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -6638,7 +6638,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 43.18 107.95 0)
 			(hide yes)
 			(show_name no)
