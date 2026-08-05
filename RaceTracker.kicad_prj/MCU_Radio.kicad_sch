@@ -6810,7 +6810,7 @@
 		)
 		(uuid "b0c29f2b-0713-4221-b706-ac1ed13c036f")
 	)
-	(label "RESETN"
+	(label "SWD_NRESET"
 		(at 400.05 217.17 0)
 		(effects
 			(font
@@ -7634,6 +7634,104 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 250.19 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f92c3463-04c4-4ff8-b528-3640e1ee006c")
+		(property "Reference" "R2"
+			(at 250.19 226.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "39R SWD nRESET"
+			(at 250.19 235.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa363e7c-e162-43eb-b80e-5bd1fc33dbbe")
+		)
+		(pin "2"
+			(uuid "d866e001-0462-4d0c-b58b-ffade51355b1")
+		)
+		(instances
+			(project "RaceTracker"
+				(path "/91b37a92-c006-41eb-be41-a2390c5c45b2/2eab94b4-4968-4af9-95bb-7d350df3d3fd"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "SWD_NRESET"
+		(at 247.65 231.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b169850-1c18-4db4-a691-1d1a0d8d128c")
+	)
+	(label "RESETN"
+		(at 252.73 231.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c2d4e6f8-9a1b-4c3d-8e5f-7a9b1c3d5e7f")
 	)
 	(symbol
 		(lib_id "RaceTracker:C_GENERIC")

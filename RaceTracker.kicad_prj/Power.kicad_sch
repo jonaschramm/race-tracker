@@ -6334,6 +6334,22 @@
 				)
 			)
 		)
+		(property "Manufacturer" "NXP" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PRTR5V0U2X,215" (at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c11e9c23-f53f-45be-9740-b143a4ff940f")
 		)
@@ -8264,6 +8280,16 @@
 				)
 			)
 		)
+	)
+	(label "VIN"
+		(at 220.98 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1f3a5b7-c9d1-4e3f-a5b7-c9d1e3f5a7b9")
 	)
 	(symbol
 		(lib_id "RaceTracker:R_GENERIC")
