@@ -170,23 +170,39 @@ def render_text(s, x, y, size=HEADER_FONT):
     )
 
 
+TEXT_BODY_GAP = 1.0  # Mindestabstand zwischen Bauteilkoerper-Kante und eigenem Ref/Wert-Text
+
+
+def safe_text_offsets(bbox, default_off):
+    """Ref-/Wert-Offset relativ zum Bauteil-Ursprung, garantiert ausserhalb
+    der eigenen Bounding-Box (statt der oft sehr knappen Symbol-Vorgabe --
+    besonders bei kleinen Eagle-Passiv-Symbolen sass der Standardtext sonst
+    auf dem eigenen Koerper)."""
+    ref_half_h = (REF_FONT * LINE_H_FACTOR) / 2
+    val_half_h = (VAL_FONT * LINE_H_FACTOR) / 2
+    ref_y = bbox[3] + TEXT_BODY_GAP + ref_half_h
+    val_y = bbox[1] - TEXT_BODY_GAP - val_half_h
+    return (default_off[0], ref_y), (default_off[0], val_y)
+
+
 def build_part_layout(part, meta):
-    """Liefert Liste von (unit, local_x, local_y, pins) sowie lokale Envelope
-    (minx,miny,maxx,maxy) fuer das gesamte Bauteil (ein oder zwei Koerper)."""
-    ref_off = meta["ref_offset"]
-    val_off = meta["value_offset"]
+    """Liefert Liste von (unit, local_x, local_y, pins, ref_off, val_off)
+    sowie lokale Envelope (minx,miny,maxx,maxy) fuer das gesamte Bauteil
+    (ein oder zwei Koerper)."""
     units = sorted(meta["units"].keys())
 
     if len(units) == 1:
         u = units[0]
         bbox = meta["units"][u]["bbox"]
+        ref_off, _ = safe_text_offsets(bbox, meta["ref_offset"])
+        _, val_off = safe_text_offsets(bbox, meta["value_offset"])
         ref_env = text_envelope(ref_off[0], ref_off[1], part["ref"], REF_FONT)
         val_env = text_envelope(val_off[0], val_off[1], part["value"], VAL_FONT)
         env = union_bbox(union_bbox(bbox, ref_env), val_env)
         if part["ref"] in PAD_EXTRA:
             p = PAD_EXTRA[part["ref"]]
             env = (env[0] - p, env[1] - p, env[2] + p, env[3] + p)
-        placements = [(u, 0.0, 0.0, [p["number"] for p in meta["units"][u]["pins"]])]
+        placements = [(u, 0.0, 0.0, [p["number"] for p in meta["units"][u]["pins"]], ref_off, val_off)]
         return placements, env
 
     # Mehrfach-Symbol (aktuell nur Q2 / MOSFET_PMOS_DIODE_SIA817): zwei
@@ -198,12 +214,14 @@ def build_part_layout(part, meta):
         bbox = meta["units"][u]["bbox"]
         w = bbox[2] - bbox[0]
         origin_x = cursor_x - bbox[0]
+        ref_off, _ = safe_text_offsets(bbox, meta["ref_offset"])
+        _, val_off = safe_text_offsets(bbox, meta["value_offset"])
         ref_env = text_envelope(origin_x + ref_off[0], ref_off[1], part["ref"], REF_FONT)
         val_env = text_envelope(origin_x + val_off[0], val_off[1], part["value"], VAL_FONT)
         body_env = (origin_x + bbox[0], bbox[1], origin_x + bbox[2], bbox[3])
         this_env = union_bbox(union_bbox(body_env, ref_env), val_env)
         env = this_env if env is None else union_bbox(env, this_env)
-        placements.append((u, origin_x, 0.0, [p["number"] for p in meta["units"][u]["pins"]]))
+        placements.append((u, origin_x, 0.0, [p["number"] for p in meta["units"][u]["pins"]], ref_off, val_off))
         cursor_x += w + SUBUNIT_GAP
     return placements, env
 
@@ -228,11 +246,12 @@ def pack_group(parts, metas):
             row_height = 0.0
         base_x = x_cursor - env[0]
         base_y = y_cursor - env[1]
-        for unit, lx, ly, pins in placements:
+        for unit, lx, ly, pins, ref_off, val_off in placements:
             instances.append({
                 "part": part, "unit": unit,
                 "x": base_x + lx, "y": base_y + ly,
                 "pins": pins, "meta": meta,
+                "ref_off": ref_off, "val_off": val_off,
             })
         x_cursor += w + GAP_INTRA
         row_height = max(row_height, h)
@@ -300,10 +319,9 @@ def main():
             meta = inst["meta"]
             abs_x = gx + inst["x"]
             abs_y = gy + inst["y"]
-            lib_name = resolve_lib_name(part["lib_id"])
             symbol_blocks.append(render_instance(
                 part["lib_id"], part["ref"], part["value"], part["footprint"],
-                abs_x, abs_y, inst["unit"], meta["ref_offset"], meta["value_offset"],
+                abs_x, abs_y, inst["unit"], inst["ref_off"], inst["val_off"],
                 inst["pins"],
             ))
             bbox = meta["units"][inst["unit"]]["bbox"]
@@ -311,8 +329,8 @@ def main():
                 f'{part["ref"]}/u{inst["unit"]} body',
                 abs_x + bbox[0], abs_y + bbox[1], abs_x + bbox[2], abs_y + bbox[3],
             ))
-            ref_env = text_envelope(abs_x + meta["ref_offset"][0], abs_y + meta["ref_offset"][1], part["ref"], REF_FONT)
-            val_env = text_envelope(abs_x + meta["value_offset"][0], abs_y + meta["value_offset"][1], part["value"], VAL_FONT)
+            ref_env = text_envelope(abs_x + inst["ref_off"][0], abs_y + inst["ref_off"][1], part["ref"], REF_FONT)
+            val_env = text_envelope(abs_x + inst["val_off"][0], abs_y + inst["val_off"][1], part["value"], VAL_FONT)
             text_boxes.append((f'{part["ref"]}/u{inst["unit"]} Ref-Text', *ref_env))
             text_boxes.append((f'{part["ref"]}/u{inst["unit"]} Wert-Text', *val_env))
 

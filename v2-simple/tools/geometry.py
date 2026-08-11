@@ -69,11 +69,11 @@ def extract_units(sym_text: str, sym_name: str):
     # Sub-Unit-Namen tragen nie das "RaceTracker:"-Praefix, auch wenn der
     # Top-Level-Name es hat (Projektregel 13: eingebettetes Systemsymbol).
     base_name = sym_name.split(":", 1)[-1]
-    for m in re.finditer(rf'\(symbol "{re.escape(base_name)}_(\d+)_\d+"', sym_text):
+    for m in re.finditer(rf'\(symbol "{re.escape(base_name)}_(\d+)_(\d+)"', sym_text):
         unit_nr = int(m.group(1))
         if unit_nr in units:
             continue
-        unit_name = f"{base_name}_{unit_nr}_1"
+        unit_name = f"{base_name}_{unit_nr}_{m.group(2)}"
         unit_text = find_top_level_symbol_relaxed(sym_text, unit_name)
         pins = extract_pins(unit_text)
         bbox = extract_graphics_bbox(unit_text)

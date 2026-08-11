@@ -15,7 +15,7 @@
         {
           "ref": "D1",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:ESD_PRTR5V0U2X",
+          "lib_id": "RaceTracker:PRTR5V0U2X,215",
           "value": "PRTR5V",
           "footprint": "RaceTracker:SOT143B_4N",
           "mpn": "PRTR5V0U2X,215",
@@ -24,7 +24,7 @@
         {
           "ref": "R37",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "5k1 CC1",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -33,7 +33,7 @@
         {
           "ref": "R38",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "5k1 CC2",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -42,7 +42,7 @@
         {
           "ref": "R1",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "1M",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -51,7 +51,7 @@
         {
           "ref": "C1",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0805",
           "value": "4n7",
           "footprint": "Capacitor_SMD:C_0805_2012Metric",
           "mpn": "",
@@ -60,7 +60,7 @@
         {
           "ref": "F1",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:PTC_GENERIC",
+          "lib_id": "RaceTracker:PTC",
           "value": "MFFSMF050",
           "footprint": "Fuse:Fuse_0603_1608Metric",
           "mpn": "",
@@ -74,7 +74,7 @@
         {
           "ref": "J7",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:CONN_JST_PH_2P",
+          "lib_id": "RaceTracker:BATTERY",
           "value": "LiPo",
           "footprint": "RaceTracker:JST_S2B_PH_SM4_TB",
           "mpn": "",
@@ -83,7 +83,7 @@
         {
           "ref": "F2",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:PTC_GENERIC",
+          "lib_id": "RaceTracker:PTC",
           "value": "MFFSMF050",
           "footprint": "Fuse:Fuse_0603_1608Metric",
           "mpn": "",
@@ -92,7 +92,7 @@
         {
           "ref": "D2",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:DIODE_AC",
+          "lib_id": "RaceTracker:PMEG6020AELRX",
           "value": "PMEG6020",
           "footprint": "RaceTracker:SODFL3517X110N",
           "mpn": "",
@@ -106,7 +106,7 @@
         {
           "ref": "Q2",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:MOSFET_PMOS_DIODE_SIA817",
+          "lib_id": "RaceTracker:SIA817EDJ",
           "value": "SIA817",
           "footprint": "RaceTracker:SON65P205X205X75-8N-MWSD",
           "mpn": "",
@@ -115,7 +115,7 @@
         {
           "ref": "D3",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:DIODE_AC",
+          "lib_id": "RaceTracker:PMEG6020AELRX",
           "value": "PMEG6020",
           "footprint": "RaceTracker:SODFL3517X110N",
           "mpn": "",
@@ -124,7 +124,7 @@
         {
           "ref": "R27",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "390R",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -133,7 +133,7 @@
         {
           "ref": "DL3",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:LED_AC",
+          "lib_id": "RaceTracker:LED-0603",
           "value": "gruen USB",
           "footprint": "RaceTracker:LED_0603_AK",
           "mpn": "",
@@ -147,7 +147,7 @@
         {
           "ref": "U5",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:BQ24195L_QFN24",
+          "lib_id": "RaceTracker:BQ24195QFN-24",
           "value": "BQ24195L",
           "footprint": "RaceTracker:QFN24_BQ24195L",
           "mpn": "",
@@ -156,7 +156,7 @@
         {
           "ref": "L2",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:L_GENERIC",
+          "lib_id": "RaceTracker:LSRP",
           "value": "2u2",
           "footprint": "RaceTracker:SRP4020",
           "mpn": "",
@@ -165,7 +165,7 @@
         {
           "ref": "C12",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0603",
           "value": "10u",
           "footprint": "Capacitor_SMD:C_0603_1608Metric",
           "mpn": "",
@@ -174,7 +174,7 @@
         {
           "ref": "C13",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0603",
           "value": "10u",
           "footprint": "Capacitor_SMD:C_0603_1608Metric",
           "mpn": "",
@@ -183,7 +183,7 @@
         {
           "ref": "C14",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "1u",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -192,7 +192,7 @@
         {
           "ref": "C15",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "47n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -201,7 +201,7 @@
         {
           "ref": "C16",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "4u7",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -210,7 +210,7 @@
         {
           "ref": "C19",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0603",
           "value": "10u",
           "footprint": "Capacitor_SMD:C_0603_1608Metric",
           "mpn": "",
@@ -219,7 +219,7 @@
         {
           "ref": "C20",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0603",
           "value": "10u",
           "footprint": "Capacitor_SMD:C_0603_1608Metric",
           "mpn": "",
@@ -228,7 +228,7 @@
         {
           "ref": "C22",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "1u",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -237,7 +237,7 @@
         {
           "ref": "C32",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "1u",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -246,7 +246,7 @@
         {
           "ref": "R28",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "330R",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -255,7 +255,7 @@
         {
           "ref": "R29",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "10k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -264,7 +264,7 @@
         {
           "ref": "R30",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "5k49",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -273,7 +273,7 @@
         {
           "ref": "R24",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "10k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -282,7 +282,7 @@
         {
           "ref": "R23",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "330R",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -291,7 +291,7 @@
         {
           "ref": "R25",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "10k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -300,7 +300,7 @@
         {
           "ref": "R26",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "10k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -309,7 +309,7 @@
         {
           "ref": "R19",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "100k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -318,7 +318,7 @@
         {
           "ref": "Q3",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:MOSFET_NCH_SOT523",
+          "lib_id": "RaceTracker:2N7002T-SOT523",
           "value": "2N7002",
           "footprint": "RaceTracker:SOTFL50P160X78-3",
           "mpn": "",
@@ -327,7 +327,7 @@
         {
           "ref": "DL2",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:LED_AC",
+          "lib_id": "RaceTracker:LED-0603",
           "value": "orange Laden",
           "footprint": "RaceTracker:LED_0603_AK",
           "mpn": "",
@@ -341,7 +341,7 @@
         {
           "ref": "U6",
           "sheet": "Power.kicad_sch",
-          "lib_id": "RaceTracker:AP2112K_33_SOT25",
+          "lib_id": "RaceTracker:AP2112K-3.3",
           "value": "AP2112K-3.3 -> +3V3",
           "footprint": "RaceTracker:SOT25",
           "mpn": "",
@@ -355,7 +355,7 @@
         {
           "ref": "U1",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:SAMD21G18A_QFN48",
+          "lib_id": "RaceTracker:ATSAMD21G18A-48QFN",
           "value": "D21G18",
           "footprint": "RaceTracker:QFN48_SAMD21G18A",
           "mpn": "",
@@ -364,7 +364,7 @@
         {
           "ref": "C17",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -373,7 +373,7 @@
         {
           "ref": "C18",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -382,7 +382,7 @@
         {
           "ref": "C21",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -391,7 +391,7 @@
         {
           "ref": "C24",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -400,7 +400,7 @@
         {
           "ref": "C25",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "1u",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -409,7 +409,7 @@
         {
           "ref": "C26",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "1u",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -418,7 +418,7 @@
         {
           "ref": "L3",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:FERRITE_GENERIC",
+          "lib_id": "RaceTracker:FERRITE0603",
           "value": "BLM18PG471",
           "footprint": "Inductor_SMD:L_0603_1608Metric",
           "mpn": "",
@@ -427,7 +427,7 @@
         {
           "ref": "C23",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -436,7 +436,7 @@
         {
           "ref": "C27",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0603",
           "value": "4u7",
           "footprint": "Capacitor_SMD:C_0603_1608Metric",
           "mpn": "",
@@ -445,7 +445,7 @@
         {
           "ref": "C5",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "4u7",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -454,7 +454,7 @@
         {
           "ref": "C7",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -463,7 +463,7 @@
         {
           "ref": "C6",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -472,7 +472,7 @@
         {
           "ref": "R8",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "330k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -481,7 +481,7 @@
         {
           "ref": "R9",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "1M2",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -495,7 +495,7 @@
         {
           "ref": "Y1",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:CRYSTAL_32K768",
+          "lib_id": "RaceTracker:32.768KHZ",
           "value": "32768Hz",
           "footprint": "RaceTracker:ABS07_CRYSTAL",
           "mpn": "",
@@ -504,7 +504,7 @@
         {
           "ref": "C3",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "20p",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -513,7 +513,7 @@
         {
           "ref": "C4",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "20p",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -527,7 +527,7 @@
         {
           "ref": "PB1",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:SW_PUSH_PTS820",
+          "lib_id": "RaceTracker:TACTILE1PTS820-NH",
           "value": "Reset",
           "footprint": "RaceTracker:PTS820_NO_HOLES",
           "mpn": "",
@@ -536,7 +536,7 @@
         {
           "ref": "R3",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "330R",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -545,7 +545,7 @@
         {
           "ref": "R6",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "330R",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -554,7 +554,7 @@
         {
           "ref": "R5",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "10k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -563,7 +563,7 @@
         {
           "ref": "R10",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "100k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -572,7 +572,7 @@
         {
           "ref": "C2",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -586,7 +586,7 @@
         {
           "ref": "R13",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "4k7",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -595,7 +595,7 @@
         {
           "ref": "R14",
           "sheet": "MCU_Radio.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "4k7",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -632,7 +632,7 @@
         {
           "ref": "C43",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0603",
           "value": "10u (SD)",
           "footprint": "Capacitor_SMD:C_0603_1608Metric",
           "mpn": "",
@@ -641,7 +641,7 @@
         {
           "ref": "C44",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:C_GENERIC",
+          "lib_id": "RaceTracker:C-0402",
           "value": "100n (SD)",
           "footprint": "Capacitor_SMD:C_0402_1005Metric",
           "mpn": "",
@@ -650,7 +650,7 @@
         {
           "ref": "R40",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "10k (SD_CS Pullup)",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -664,7 +664,7 @@
         {
           "ref": "DL10",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:LED_AC",
+          "lib_id": "RaceTracker:LED-0603",
           "value": "gruen GPS-Fix",
           "footprint": "RaceTracker:LED_0603_AK",
           "mpn": "",
@@ -673,7 +673,7 @@
         {
           "ref": "DL11",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:LED_AC",
+          "lib_id": "RaceTracker:LED-0603",
           "value": "blau Aufnahme",
           "footprint": "RaceTracker:LED_0603_AK",
           "mpn": "",
@@ -682,7 +682,7 @@
         {
           "ref": "DL12",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:LED_AC",
+          "lib_id": "RaceTracker:LED-0603",
           "value": "rot Fehler",
           "footprint": "RaceTracker:LED_0603_AK",
           "mpn": "",
@@ -691,7 +691,7 @@
         {
           "ref": "R44",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "1k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -700,7 +700,7 @@
         {
           "ref": "R45",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "1k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
@@ -709,7 +709,7 @@
         {
           "ref": "R46",
           "sheet": "Sensors_Storage.kicad_sch",
-          "lib_id": "RaceTracker:R_GENERIC",
+          "lib_id": "RaceTracker:R-0402",
           "value": "1k",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
