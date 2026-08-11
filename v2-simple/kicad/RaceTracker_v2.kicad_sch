@@ -1,0 +1,8110 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "162f302c-5186-4910-8bac-22f41f6c701b")
+	(paper "A1")
+	(title_block
+		(title "Race Tracker Platine v2 - vereinfacht (GPS-Logger, keine Verbindungen)")
+		(rev "0.1")
+		(company "Objectix Software Solutions")
+		(comment 1 "Jona Schramm")
+		(comment 2 "Nur Platzierung -- Verdrahtung erfolgt manuell in KiCad")
+	)
+	(lib_symbols
+		(symbol "RaceTracker:AP2112K_33_SOT25" (in_bom yes) (on_board yes)
+		    (property "Reference" "U" (at 0 8.080 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "AP2112K-3.3" (at 0 -8.080 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:SOT25" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "AP2112K_33_SOT25_1_1"
+		      (rectangle (start -12.700 5.080) (end 12.700 -5.080)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin power_in line (at -15.240 1.270 0) (length 2.54)
+		        (name "IN" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -1.270 0) (length 2.54)
+		        (name "EN" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_out line (at 15.240 0.000 180) (length 2.54)
+		        (name "OUT" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 -7.620 90) (length 2.54)
+		        (name "GND/ADJ" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:BQ24195L_QFN24" (in_bom yes) (on_board yes)
+		    (property "Reference" "U" (at 0 13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "BQ24195L" (at 0 -13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:QFN24_BQ24195L" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "BQ24195L_QFN24_1_1"
+		      (rectangle (start -12.700 10.160) (end 12.700 -10.160)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin bidirectional line (at -15.240 8.890 0) (length 2.54)
+		        (name "D+" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 6.350 0) (length 2.54)
+		        (name "D-" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 3.810 0) (length 2.54)
+		        (name "STAT" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 1.270 0) (length 2.54)
+		        (name "SCL" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -1.270 0) (length 2.54)
+		        (name "SDA" (effects (font (size 1.27 1.27))))
+		        (number "6" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -3.810 0) (length 2.54)
+		        (name "INT" (effects (font (size 1.27 1.27))))
+		        (number "7" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -6.350 0) (length 2.54)
+		        (name "OTG" (effects (font (size 1.27 1.27))))
+		        (number "8" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -8.890 0) (length 2.54)
+		        (name "CE" (effects (font (size 1.27 1.27))))
+		        (number "9" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 7.620 180) (length 2.54)
+		        (name "ILIM" (effects (font (size 1.27 1.27))))
+		        (number "10" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 15.240 5.080 180) (length 2.54)
+		        (name "TS1" (effects (font (size 1.27 1.27))))
+		        (number "11" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 15.240 2.540 180) (length 2.54)
+		        (name "TS2" (effects (font (size 1.27 1.27))))
+		        (number "12" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 15.240 0.000 180) (length 2.54)
+		        (name "BAT" (effects (font (size 1.27 1.27))))
+		        (number "13" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 15.240 0.000 180) (length 2.54) hide
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "14" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -2.540 180) (length 2.54)
+		        (name "SW" (effects (font (size 1.27 1.27))))
+		        (number "19" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 15.240 -2.540 180) (length 2.54) hide
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "20" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -5.080 180) (length 2.54)
+		        (name "BTST" (effects (font (size 1.27 1.27))))
+		        (number "21" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 15.240 -7.620 180) (length 2.54)
+		        (name "TH" (effects (font (size 1.27 1.27))))
+		        (number "25" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at -3.810 12.700 270) (length 2.54)
+		        (name "VBUS" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -3.810 12.700 270) (length 2.54) hide
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "24" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_out line (at -1.270 12.700 270) (length 2.54)
+		        (name "SYS" (effects (font (size 1.27 1.27))))
+		        (number "15" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -1.270 12.700 270) (length 2.54) hide
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "16" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_out line (at 1.270 12.700 270) (length 2.54)
+		        (name "REGN" (effects (font (size 1.27 1.27))))
+		        (number "22" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_out line (at 3.810 12.700 270) (length 2.54)
+		        (name "PMID" (effects (font (size 1.27 1.27))))
+		        (number "23" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 -12.700 90) (length 2.54)
+		        (name "PGND" (effects (font (size 1.27 1.27))))
+		        (number "17" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 0.000 -12.700 90) (length 2.54) hide
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "18" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:CONN_EPAPER_8P" (in_bom yes) (on_board yes)
+		    (property "Reference" "J" (at 0 13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "e-Paper 8-pol (steckbar)" (at 0 -13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:CONN_1x08_2.54mm" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "CONN_EPAPER_8P_1_1"
+		      (rectangle (start -12.700 10.160) (end 12.700 -10.160)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin output line (at -15.240 6.350 0) (length 2.54)
+		        (name "BUSY" (effects (font (size 1.27 1.27))))
+		        (number "7" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin input line (at -15.240 3.810 0) (length 2.54)
+		        (name "RST" (effects (font (size 1.27 1.27))))
+		        (number "6" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin input line (at -15.240 1.270 0) (length 2.54)
+		        (name "DC" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin input line (at -15.240 -1.270 0) (length 2.54)
+		        (name "CS" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin input line (at -15.240 -3.810 0) (length 2.54)
+		        (name "CLK" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin input line (at -15.240 -6.350 0) (length 2.54)
+		        (name "DIN" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 12.700 270) (length 2.54)
+		        (name "VCC" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 -12.700 90) (length 2.54)
+		        (name "GND" (effects (font (size 1.27 1.27))))
+		        (number "8" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:CONN_GPS_8P" (in_bom yes) (on_board yes)
+		    (property "Reference" "J" (at 0 13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "GPS 8-pol (extern)" (at 0 -13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "CONN_GPS_8P_1_1"
+		      (rectangle (start -12.700 10.160) (end 12.700 -10.160)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -15.240 6.350 0) (length 2.54)
+		        (name "SDA" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 3.810 0) (length 2.54)
+		        (name "SCL" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 1.270 0) (length 2.54)
+		        (name "TX" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -1.270 0) (length 2.54)
+		        (name "RX" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -3.810 0) (length 2.54)
+		        (name "PPS" (effects (font (size 1.27 1.27))))
+		        (number "6" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -6.350 0) (length 2.54)
+		        (name "RESET" (effects (font (size 1.27 1.27))))
+		        (number "7" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 12.700 270) (length 2.54)
+		        (name "3V3" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 -12.700 90) (length 2.54)
+		        (name "GND" (effects (font (size 1.27 1.27))))
+		        (number "8" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:CONN_JST_PH_2P" (in_bom yes) (on_board yes)
+		    (property "Reference" "J" (at 0 8.080 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "JST-PH LiPo" (at 0 -8.080 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:CONN_JST_PH_S2B" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "CONN_JST_PH_2P_1_1"
+		      (rectangle (start -6.350 5.080) (end 6.350 -5.080)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -8.890 2.540 0) (length 2.54)
+		        (name "BATT+" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -8.890 -2.540 0) (length 2.54)
+		        (name "BATT-" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54)
+		        (name "SHIELD" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54) hide
+		        (name "SHIELD" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:CONN_SWD_1x5" (in_bom yes) (on_board yes)
+		    (property "Reference" "J" (at 0 10.620 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "SWD 1x5" (at 0 -10.620 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:CONN_1x05_2.54mm" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "CONN_SWD_1x5_1_1"
+		      (rectangle (start -12.700 7.620) (end 12.700 -7.620)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -15.240 5.080 0) (length 2.54)
+		        (name "SWCLK" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 2.540 0) (length 2.54)
+		        (name "SWDIO" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 0.000 0) (length 2.54)
+		        (name "nRESET" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -2.540 0) (length 2.54)
+		        (name "+3V3" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -5.080 0) (length 2.54)
+		        (name "GND" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:CONN_WIFI_8P" (in_bom yes) (on_board yes)
+		    (property "Reference" "J" (at 0 13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "WiFi 8-pol (extern)" (at 0 -13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "CONN_WIFI_8P_1_1"
+		      (rectangle (start -12.700 10.160) (end 12.700 -10.160)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -15.240 6.350 0) (length 2.54)
+		        (name "TX" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 3.810 0) (length 2.54)
+		        (name "RX" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 1.270 0) (length 2.54)
+		        (name "RTS" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -1.270 0) (length 2.54)
+		        (name "CTS" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -3.810 0) (length 2.54)
+		        (name "RESET" (effects (font (size 1.27 1.27))))
+		        (number "6" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -15.240 -6.350 0) (length 2.54)
+		        (name "EN" (effects (font (size 1.27 1.27))))
+		        (number "7" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 12.700 270) (length 2.54)
+		        (name "3V3" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 -12.700 90) (length 2.54)
+		        (name "GND" (effects (font (size 1.27 1.27))))
+		        (number "8" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:CRYSTAL_32K768" (in_bom yes) (on_board yes)
+		    (property "Reference" "Y" (at 0 4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "32.768kHz" (at 0 -4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:XTAL_ABS07_SMD" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "CRYSTAL_32K768_1_1"
+		      (rectangle (start -1.270 1.270) (end 1.270 -1.270)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -2.540 0.000 0) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 0.000 180) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:C_GENERIC" (in_bom yes) (on_board yes)
+		    (property "Reference" "C" (at 0 4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "C" (at 0 -4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "C_GENERIC_1_1"
+		      (rectangle (start -1.270 1.270) (end 1.270 -1.270)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -2.540 0.000 0) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 0.000 180) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:DIODE_AC" (in_bom yes) (on_board yes)
+		    (property "Reference" "D" (at 0 4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "D" (at 0 -4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "Diode_SMD:D_SOD-323" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "DIODE_AC_1_1"
+		      (rectangle (start -1.270 1.270) (end 1.270 -1.270)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -2.540 0.000 0) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "A" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 0.000 180) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "C" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:ESD_PRTR5V0U2X" (in_bom yes) (on_board yes)
+		    (property "Reference" "D" (at 0 6.810 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "PRTR5V0U2X" (at 0 -6.810 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:SOT-143" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "ESD_PRTR5V0U2X_1_1"
+		      (rectangle (start -6.350 3.810) (end 6.350 -3.810)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -8.890 1.270 0) (length 2.54)
+		        (name "IO1" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -8.890 -1.270 0) (length 2.54)
+		        (name "USB_DP" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 1.270 180) (length 2.54)
+		        (name "USB_DM" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 -1.270 180) (length 2.54)
+		        (name "VBUS" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:FERRITE_GENERIC" (in_bom yes) (on_board yes)
+		    (property "Reference" "FB" (at 0 4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "FB" (at 0 -4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "FERRITE_GENERIC_1_1"
+		      (rectangle (start -1.270 1.270) (end 1.270 -1.270)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -2.540 0.000 0) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 0.000 180) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:LED_AC" (in_bom yes) (on_board yes)
+		    (property "Reference" "DL" (at 0 4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "LED" (at 0 -4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "LED_AC_1_1"
+		      (rectangle (start -1.270 1.270) (end 1.270 -1.270)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -2.540 0.000 0) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "A" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 0.000 180) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "C" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:L_GENERIC" (in_bom yes) (on_board yes)
+		    (property "Reference" "L" (at 0 4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "L" (at 0 -4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "L_GENERIC_1_1"
+		      (rectangle (start -1.270 1.270) (end 1.270 -1.270)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -2.540 0.000 0) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 0.000 180) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:MICROSD_PUSHPUSH" (in_bom yes) (on_board yes)
+		    (property "Reference" "J" (at 0 13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "MicroSD Push-Push" (at 0 -13.160 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:MICROSD_PUSHPUSH" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "MICROSD_PUSHPUSH_1_1"
+		      (rectangle (start -12.700 10.160) (end 12.700 -10.160)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin bidirectional line (at -15.240 6.350 0) (length 2.54)
+		        (name "DAT2" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin input line (at -15.240 3.810 0) (length 2.54)
+		        (name "CD/DAT3 (CS)" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin input line (at -15.240 1.270 0) (length 2.54)
+		        (name "CMD (MOSI)" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin input line (at -15.240 -1.270 0) (length 2.54)
+		        (name "CLK (SCK)" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin output line (at -15.240 -3.810 0) (length 2.54)
+		        (name "DAT0 (MISO)" (effects (font (size 1.27 1.27))))
+		        (number "7" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -6.350 0) (length 2.54)
+		        (name "DAT1" (effects (font (size 1.27 1.27))))
+		        (number "8" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin output line (at 15.240 0.000 180) (length 2.54)
+		        (name "CARD_DET" (effects (font (size 1.27 1.27))))
+		        (number "9" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 12.700 270) (length 2.54)
+		        (name "VDD" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at -1.270 -12.700 90) (length 2.54)
+		        (name "VSS" (effects (font (size 1.27 1.27))))
+		        (number "6" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 1.270 -12.700 90) (length 2.54)
+		        (name "SHIELD" (effects (font (size 1.27 1.27))))
+		        (number "10" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:MOSFET_NCH_SOT523" (in_bom yes) (on_board yes)
+		    (property "Reference" "Q" (at 0 6.810 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "2N7002" (at 0 -6.810 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:SOT-523" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "MOSFET_NCH_SOT523_1_1"
+		      (rectangle (start -6.350 3.810) (end 6.350 -3.810)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -8.890 1.270 0) (length 2.54)
+		        (name "G" (effects (font (size 1.27 1.27))))
+		        (number "G" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -8.890 -1.270 0) (length 2.54)
+		        (name "D" (effects (font (size 1.27 1.27))))
+		        (number "D" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54)
+		        (name "S" (effects (font (size 1.27 1.27))))
+		        (number "S" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:MOSFET_PMOS_DIODE_SIA817" (in_bom yes) (on_board yes)
+		    (property "Reference" "Q" (at 0 8.080 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "SIA817EDJ" (at 0 -8.080 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:SON-8_SIA817" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "MOSFET_PMOS_DIODE_SIA817_1_1"
+		      (rectangle (start -6.350 5.080) (end 6.350 -5.080)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -8.890 0.000 0) (length 2.54)
+		        (name "G" (effects (font (size 1.27 1.27))))
+		        (number "G" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 2.540 180) (length 2.54)
+		        (name "D" (effects (font (size 1.27 1.27))))
+		        (number "D" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 2.540 180) (length 2.54) hide
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "D2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 -2.540 180) (length 2.54)
+		        (name "S" (effects (font (size 1.27 1.27))))
+		        (number "S" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		    (symbol "MOSFET_PMOS_DIODE_SIA817_2_1"
+		      (rectangle (start -6.350 5.080) (end 6.350 -5.080)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -8.890 0.000 0) (length 2.54)
+		        (name "A" (effects (font (size 1.27 1.27))))
+		        (number "A" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54)
+		        (name "K" (effects (font (size 1.27 1.27))))
+		        (number "K" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54) hide
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "K2" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:PTC_GENERIC" (in_bom yes) (on_board yes)
+		    (property "Reference" "F" (at 0 4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "PTC" (at 0 -4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "Fuse:Fuse_0603_1608Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "PTC_GENERIC_1_1"
+		      (rectangle (start -1.270 1.270) (end 1.270 -1.270)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -2.540 0.000 0) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 0.000 180) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:R_GENERIC" (in_bom yes) (on_board yes)
+		    (property "Reference" "R" (at 0 4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "R" (at 0 -4.270 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "R_GENERIC_1_1"
+		      (rectangle (start -1.270 1.270) (end 1.270 -1.270)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -2.540 0.000 0) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 0.000 180) (length 1.27)
+		        (name "~" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:SAMD21G18A_QFN48" (in_bom yes) (on_board yes)
+		    (property "Reference" "U" (at 0 28.400 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "ATSAMD21G18A-AU" (at 0 -28.400 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:QFN48_SAMD21G18A" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "SAMD21G18A_QFN48_1_1"
+		      (rectangle (start -12.700 25.400) (end 12.700 -25.400)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin bidirectional line (at -15.240 24.130 0) (length 2.54)
+		        (name "PA00/XIN32" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 21.590 0) (length 2.54)
+		        (name "PA01/XOUT32" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 19.050 0) (length 2.54)
+		        (name "PA02" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 16.510 0) (length 2.54)
+		        (name "PA03" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 13.970 0) (length 2.54)
+		        (name "PB08" (effects (font (size 1.27 1.27))))
+		        (number "7" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 11.430 0) (length 2.54)
+		        (name "PB09" (effects (font (size 1.27 1.27))))
+		        (number "8" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 8.890 0) (length 2.54)
+		        (name "PA04" (effects (font (size 1.27 1.27))))
+		        (number "9" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 6.350 0) (length 2.54)
+		        (name "PA05" (effects (font (size 1.27 1.27))))
+		        (number "10" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 3.810 0) (length 2.54)
+		        (name "PA06" (effects (font (size 1.27 1.27))))
+		        (number "11" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 1.270 0) (length 2.54)
+		        (name "PA07" (effects (font (size 1.27 1.27))))
+		        (number "12" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -1.270 0) (length 2.54)
+		        (name "PA08" (effects (font (size 1.27 1.27))))
+		        (number "13" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -3.810 0) (length 2.54)
+		        (name "PA09" (effects (font (size 1.27 1.27))))
+		        (number "14" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -6.350 0) (length 2.54)
+		        (name "PA10" (effects (font (size 1.27 1.27))))
+		        (number "15" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -8.890 0) (length 2.54)
+		        (name "PA11" (effects (font (size 1.27 1.27))))
+		        (number "16" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -11.430 0) (length 2.54)
+		        (name "PB10" (effects (font (size 1.27 1.27))))
+		        (number "19" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -13.970 0) (length 2.54)
+		        (name "PB11" (effects (font (size 1.27 1.27))))
+		        (number "20" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -16.510 0) (length 2.54)
+		        (name "PA12" (effects (font (size 1.27 1.27))))
+		        (number "21" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -19.050 0) (length 2.54)
+		        (name "PA13" (effects (font (size 1.27 1.27))))
+		        (number "22" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -21.590 0) (length 2.54)
+		        (name "PA14" (effects (font (size 1.27 1.27))))
+		        (number "23" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at -15.240 -24.130 0) (length 2.54)
+		        (name "PA15" (effects (font (size 1.27 1.27))))
+		        (number "24" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 22.860 180) (length 2.54)
+		        (name "PA16" (effects (font (size 1.27 1.27))))
+		        (number "25" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 20.320 180) (length 2.54)
+		        (name "PA17" (effects (font (size 1.27 1.27))))
+		        (number "26" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 17.780 180) (length 2.54)
+		        (name "PA18" (effects (font (size 1.27 1.27))))
+		        (number "27" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 15.240 180) (length 2.54)
+		        (name "PA19" (effects (font (size 1.27 1.27))))
+		        (number "28" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 12.700 180) (length 2.54)
+		        (name "PA20" (effects (font (size 1.27 1.27))))
+		        (number "29" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 10.160 180) (length 2.54)
+		        (name "PA21" (effects (font (size 1.27 1.27))))
+		        (number "30" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 7.620 180) (length 2.54)
+		        (name "PA22" (effects (font (size 1.27 1.27))))
+		        (number "31" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 5.080 180) (length 2.54)
+		        (name "PA23" (effects (font (size 1.27 1.27))))
+		        (number "32" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 2.540 180) (length 2.54)
+		        (name "PA24/USB_DM" (effects (font (size 1.27 1.27))))
+		        (number "33" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 0.000 180) (length 2.54)
+		        (name "PA25/USB_DP" (effects (font (size 1.27 1.27))))
+		        (number "34" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -2.540 180) (length 2.54)
+		        (name "PB22" (effects (font (size 1.27 1.27))))
+		        (number "37" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -5.080 180) (length 2.54)
+		        (name "PB23" (effects (font (size 1.27 1.27))))
+		        (number "38" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -7.620 180) (length 2.54)
+		        (name "PA27" (effects (font (size 1.27 1.27))))
+		        (number "39" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -10.160 180) (length 2.54)
+		        (name "RESETN" (effects (font (size 1.27 1.27))))
+		        (number "40" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -12.700 180) (length 2.54)
+		        (name "PA28" (effects (font (size 1.27 1.27))))
+		        (number "41" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -15.240 180) (length 2.54)
+		        (name "PA30/SWCLK" (effects (font (size 1.27 1.27))))
+		        (number "45" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -17.780 180) (length 2.54)
+		        (name "PA31/SWDIO" (effects (font (size 1.27 1.27))))
+		        (number "46" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -20.320 180) (length 2.54)
+		        (name "PB02" (effects (font (size 1.27 1.27))))
+		        (number "47" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin bidirectional line (at 15.240 -22.860 180) (length 2.54)
+		        (name "PB03" (effects (font (size 1.27 1.27))))
+		        (number "48" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -5.080 27.940 270) (length 2.54)
+		        (name "VDDANA" (effects (font (size 1.27 1.27))))
+		        (number "6" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at -2.540 27.940 270) (length 2.54)
+		        (name "VDDIO@1" (effects (font (size 1.27 1.27))))
+		        (number "17" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 27.940 270) (length 2.54)
+		        (name "VDDIO@2" (effects (font (size 1.27 1.27))))
+		        (number "36" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 2.540 27.940 270) (length 2.54)
+		        (name "VDDCORE" (effects (font (size 1.27 1.27))))
+		        (number "43" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 5.080 27.940 270) (length 2.54)
+		        (name "VDDIN" (effects (font (size 1.27 1.27))))
+		        (number "44" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at -5.080 -27.940 90) (length 2.54)
+		        (name "GNDANA" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at -2.540 -27.940 90) (length 2.54)
+		        (name "GND@1" (effects (font (size 1.27 1.27))))
+		        (number "18" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 0.000 -27.940 90) (length 2.54)
+		        (name "GND@2" (effects (font (size 1.27 1.27))))
+		        (number "35" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 2.540 -27.940 90) (length 2.54)
+		        (name "GND@3" (effects (font (size 1.27 1.27))))
+		        (number "42" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin power_in line (at 5.080 -27.940 90) (length 2.54)
+		        (name "EP" (effects (font (size 1.27 1.27))))
+		        (number "49" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:SW_PUSH_PTS820" (in_bom yes) (on_board yes)
+		    (property "Reference" "SW" (at 0 8.080 0) (effects (font (size 1.27 1.27))))
+		    (property "Value" "PTS820 Reset" (at 0 -8.080 0) (effects (font (size 1.27 1.27))))
+		    (property "Footprint" "RaceTracker:SW_PTS820_NO_HOLES" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+		    (symbol "SW_PUSH_PTS820_1_1"
+		      (rectangle (start -6.350 5.080) (end 6.350 -5.080)
+		        (stroke (width 0.254) (type default)) (fill (type background)))
+		      (pin passive line (at -8.890 2.540 0) (length 2.54)
+		        (name "A" (effects (font (size 1.27 1.27))))
+		        (number "5" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at -8.890 -2.540 0) (length 2.54)
+		        (name "B" (effects (font (size 1.27 1.27))))
+		        (number "6" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54)
+		        (name "SHIELD" (effects (font (size 1.27 1.27))))
+		        (number "1" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54) hide
+		        (name "SHIELD" (effects (font (size 1.27 1.27))))
+		        (number "2" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54) hide
+		        (name "SHIELD" (effects (font (size 1.27 1.27))))
+		        (number "3" (effects (font (size 1.27 1.27))))
+		      )
+		      (pin passive line (at 8.890 0.000 180) (length 2.54) hide
+		        (name "SHIELD" (effects (font (size 1.27 1.27))))
+		        (number "4" (effects (font (size 1.27 1.27))))
+		      )
+		    )
+		  )
+		(symbol "RaceTracker:USB_C_Receptacle_USB2.0_16P"
+		  		(pin_names
+		  			(offset 1.016)
+		  		)
+		  		(exclude_from_sim no)
+		  		(in_bom yes)
+		  		(on_board yes)
+		  		(in_pos_files yes)
+		  		(duplicate_pin_numbers_are_jumpers no)
+		  		(property "Reference" "J"
+		  			(at 0 22.225 0)
+		  			(show_name no)
+		  			(do_not_autoplace no)
+		  			(effects
+		  				(font
+		  					(size 1.27 1.27)
+		  				)
+		  			)
+		  		)
+		  		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+		  			(at 0 19.685 0)
+		  			(show_name no)
+		  			(do_not_autoplace no)
+		  			(effects
+		  				(font
+		  					(size 1.27 1.27)
+		  				)
+		  			)
+		  		)
+		  		(property "Footprint" ""
+		  			(at 3.81 0 0)
+		  			(show_name no)
+		  			(do_not_autoplace no)
+		  			(hide yes)
+		  			(effects
+		  				(font
+		  					(size 1.27 1.27)
+		  				)
+		  			)
+		  		)
+		  		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		  			(at 3.81 0 0)
+		  			(show_name no)
+		  			(do_not_autoplace no)
+		  			(hide yes)
+		  			(effects
+		  				(font
+		  					(size 1.27 1.27)
+		  				)
+		  			)
+		  		)
+		  		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+		  			(at 0 0 0)
+		  			(show_name no)
+		  			(do_not_autoplace no)
+		  			(hide yes)
+		  			(effects
+		  				(font
+		  					(size 1.27 1.27)
+		  				)
+		  			)
+		  		)
+		  		(property "ki_keywords" "usb universal serial bus type-C USB2.0"
+		  			(at 0 0 0)
+		  			(show_name no)
+		  			(do_not_autoplace no)
+		  			(hide yes)
+		  			(effects
+		  				(font
+		  					(size 1.27 1.27)
+		  				)
+		  			)
+		  		)
+		  		(property "ki_fp_filters" "USB*C*Receptacle*"
+		  			(at 0 0 0)
+		  			(show_name no)
+		  			(do_not_autoplace no)
+		  			(hide yes)
+		  			(effects
+		  				(font
+		  					(size 1.27 1.27)
+		  				)
+		  			)
+		  		)
+		  		(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
+		  			(rectangle
+		  				(start -0.254 -17.78)
+		  				(end 0.254 -16.764)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 15.494)
+		  				(end 9.144 14.986)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 10.414)
+		  				(end 9.144 9.906)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 7.874)
+		  				(end 9.144 7.366)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 2.794)
+		  				(end 9.144 2.286)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 0.254)
+		  				(end 9.144 -0.254)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 -2.286)
+		  				(end 9.144 -2.794)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 -4.826)
+		  				(end 9.144 -5.334)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 -12.446)
+		  				(end 9.144 -12.954)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 10.16 -14.986)
+		  				(end 9.144 -15.494)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  		)
+		  		(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
+		  			(rectangle
+		  				(start -10.16 17.78)
+		  				(end 10.16 -17.78)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type background)
+		  				)
+		  			)
+		  			(polyline
+		  				(pts
+		  					(xy -8.89 -3.81) (xy -8.89 3.81)
+		  				)
+		  				(stroke
+		  					(width 0.508)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start -7.62 -3.81)
+		  				(end -6.35 3.81)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type outline)
+		  				)
+		  			)
+		  			(arc
+		  				(start -7.62 3.81)
+		  				(mid -6.985 4.4423)
+		  				(end -6.35 3.81)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(arc
+		  				(start -7.62 3.81)
+		  				(mid -6.985 4.4423)
+		  				(end -6.35 3.81)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type outline)
+		  				)
+		  			)
+		  			(arc
+		  				(start -8.89 3.81)
+		  				(mid -6.985 5.7067)
+		  				(end -5.08 3.81)
+		  				(stroke
+		  					(width 0.508)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(arc
+		  				(start -5.08 -3.81)
+		  				(mid -6.985 -5.7067)
+		  				(end -8.89 -3.81)
+		  				(stroke
+		  					(width 0.508)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(arc
+		  				(start -6.35 -3.81)
+		  				(mid -6.985 -4.4423)
+		  				(end -7.62 -3.81)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(arc
+		  				(start -6.35 -3.81)
+		  				(mid -6.985 -4.4423)
+		  				(end -7.62 -3.81)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type outline)
+		  				)
+		  			)
+		  			(polyline
+		  				(pts
+		  					(xy -5.08 3.81) (xy -5.08 -3.81)
+		  				)
+		  				(stroke
+		  					(width 0.508)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(circle
+		  				(center -2.54 1.143)
+		  				(radius 0.635)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type outline)
+		  				)
+		  			)
+		  			(polyline
+		  				(pts
+		  					(xy -1.27 4.318) (xy 0 6.858) (xy 1.27 4.318) (xy -1.27 4.318)
+		  				)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type outline)
+		  				)
+		  			)
+		  			(polyline
+		  				(pts
+		  					(xy 0 -2.032) (xy 2.54 0.508) (xy 2.54 1.778)
+		  				)
+		  				(stroke
+		  					(width 0.508)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(polyline
+		  				(pts
+		  					(xy 0 -3.302) (xy -2.54 -0.762) (xy -2.54 0.508)
+		  				)
+		  				(stroke
+		  					(width 0.508)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(polyline
+		  				(pts
+		  					(xy 0 -5.842) (xy 0 4.318)
+		  				)
+		  				(stroke
+		  					(width 0.508)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type none)
+		  				)
+		  			)
+		  			(circle
+		  				(center 0 -5.842)
+		  				(radius 1.27)
+		  				(stroke
+		  					(width 0)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type outline)
+		  				)
+		  			)
+		  			(rectangle
+		  				(start 1.905 1.778)
+		  				(end 3.175 3.048)
+		  				(stroke
+		  					(width 0.254)
+		  					(type default)
+		  				)
+		  				(fill
+		  					(type outline)
+		  				)
+		  			)
+		  		)
+		  		(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
+		  			(pin passive line
+		  				(at 0 -22.86 90)
+		  				(length 5.08)
+		  				(name "GND"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "A1"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin passive line
+		  				(at 15.24 15.24 180)
+		  				(length 5.08)
+		  				(name "VBUS"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "A4"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin bidirectional line
+		  				(at 15.24 10.16 180)
+		  				(length 5.08)
+		  				(name "CC1"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "A5"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin bidirectional line
+		  				(at 15.24 -2.54 180)
+		  				(length 5.08)
+		  				(name "D+"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "A6"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin bidirectional line
+		  				(at 15.24 2.54 180)
+		  				(length 5.08)
+		  				(name "D-"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "A7"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin bidirectional line
+		  				(at 15.24 -12.7 180)
+		  				(length 5.08)
+		  				(name "SBU1"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "A8"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin passive line
+		  				(at 15.24 15.24 180)
+		  				(length 5.08)
+		  				(hide yes)
+		  				(name "VBUS"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "A9"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin passive line
+		  				(at 0 -22.86 90)
+		  				(length 5.08)
+		  				(hide yes)
+		  				(name "GND"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "A12"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin passive line
+		  				(at 0 -22.86 90)
+		  				(length 5.08)
+		  				(hide yes)
+		  				(name "GND"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "B1"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin passive line
+		  				(at 15.24 15.24 180)
+		  				(length 5.08)
+		  				(hide yes)
+		  				(name "VBUS"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "B4"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin bidirectional line
+		  				(at 15.24 7.62 180)
+		  				(length 5.08)
+		  				(name "CC2"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "B5"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin bidirectional line
+		  				(at 15.24 -5.08 180)
+		  				(length 5.08)
+		  				(name "D+"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "B6"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin bidirectional line
+		  				(at 15.24 0 180)
+		  				(length 5.08)
+		  				(name "D-"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "B7"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin bidirectional line
+		  				(at 15.24 -15.24 180)
+		  				(length 5.08)
+		  				(name "SBU2"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "B8"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin passive line
+		  				(at 15.24 15.24 180)
+		  				(length 5.08)
+		  				(hide yes)
+		  				(name "VBUS"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "B9"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin passive line
+		  				(at 0 -22.86 90)
+		  				(length 5.08)
+		  				(hide yes)
+		  				(name "GND"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "B12"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  			(pin passive line
+		  				(at -7.62 -22.86 90)
+		  				(length 5.08)
+		  				(name "SHIELD"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  				(number "SH"
+		  					(effects
+		  						(font
+		  							(size 1.27 1.27)
+		  						)
+		  					)
+		  				)
+		  			)
+		  		)
+		  		(embedded_fonts no)
+		  	)
+	)
+	(text "USB-C Eingang"
+		(exclude_from_sim no)
+		(at 79.89 24 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "73d01036-9cc2-458a-ab60-a550415bd1e2")
+	)
+	(text "LiPo Eingang"
+		(exclude_from_sim no)
+		(at 243.99 24 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "537d341e-1459-4194-89ec-ca6327b92dea")
+	)
+	(text "Power-Path"
+		(exclude_from_sim no)
+		(at 328.47 24 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "13ab5986-55a5-493b-9058-0bc97fe2370d")
+	)
+	(text "Laderegler BQ24195L"
+		(exclude_from_sim no)
+		(at 79.89 118.285 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "421073e7-ec00-4a3e-86b1-6b46bba0d6b2")
+	)
+	(text "3V3-Versorgung"
+		(exclude_from_sim no)
+		(at 293.93 118.285 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "0148affb-47fc-4811-bb04-f50b0a3897dc")
+	)
+	(text "SAMD21 + Entkopplung"
+		(exclude_from_sim no)
+		(at 514.45 118.285 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "3f99f8b3-e9b7-4cc0-8a83-2d072eb75c96")
+	)
+	(text "Quarz / RTC"
+		(exclude_from_sim no)
+		(at 723.25 118.285 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "a25a7630-28b0-4574-92e3-b691e56e3e3e")
+	)
+	(text "Reset"
+		(exclude_from_sim no)
+		(at 352.41 118.285 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "d1b743d2-bfb7-428e-befd-824b0251b010")
+	)
+	(text "I2C-Pullups"
+		(exclude_from_sim no)
+		(at 79.89 335.785 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "bf8b4c7c-7b61-4d4e-8e17-2175a5164d3f")
+	)
+	(text "Programmierung"
+		(exclude_from_sim no)
+		(at 458.51 118.285 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "7b92fba9-3952-476e-bbfc-682c9e456344")
+	)
+	(text "MicroSD"
+		(exclude_from_sim no)
+		(at 128.05 335.785 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "57a6b962-e3d2-4dc1-9e85-0fa66ae48bc8")
+	)
+	(text "Status-LEDs"
+		(exclude_from_sim no)
+		(at 386.85 335.785 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "a7e18112-6803-4a6e-85d0-936ef7cff1a8")
+	)
+	(text "Stecker extern"
+		(exclude_from_sim no)
+		(at 255.03 335.785 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left)
+		)
+		(uuid "d625fd06-0929-4d68-abd8-e524074e35b3")
+	)
+	(symbol
+		(lib_id "RaceTracker:USB_C_Receptacle_USB2.0_16P")
+		(at 87.51 58.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bee03008-3e08-472d-876d-62c51e059406")
+		(property "Reference" "J1"
+			(at 87.51 81.085 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "USB-C Sink"
+			(at 87.51 78.545 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+			(at 87.51 58.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.51 58.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 87.51 58.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A1"
+			(uuid "29e60835-3e4e-4c8f-8803-7e27a931cdaf")
+		)
+		(pin "A4"
+			(uuid "54b59042-1d1c-42e7-9ebd-ea5ea2120fec")
+		)
+		(pin "A5"
+			(uuid "e73520a0-9c6b-4634-b2d1-3f869cc0d1f7")
+		)
+		(pin "A6"
+			(uuid "35d655c9-bfec-4a09-a58e-56a7bee5c700")
+		)
+		(pin "A7"
+			(uuid "ac09f55d-6c64-4c3d-bec5-17c9dfa88d09")
+		)
+		(pin "A8"
+			(uuid "b9e47d18-f191-499e-9b66-ac1e2f52bee4")
+		)
+		(pin "A9"
+			(uuid "54d284e3-9b7b-4e6b-ae95-fbbefe825c94")
+		)
+		(pin "A12"
+			(uuid "1bdad611-5876-4ac8-b562-aecd425fff6f")
+		)
+		(pin "B1"
+			(uuid "803f24ff-dcdf-4e3a-ae6d-87c3946923cb")
+		)
+		(pin "B4"
+			(uuid "3ffa703c-1548-422b-9709-c37a9ffd6846")
+		)
+		(pin "B5"
+			(uuid "4109bca1-9393-46a5-aced-a6926d3131c7")
+		)
+		(pin "B6"
+			(uuid "c1aa9582-4ec9-4566-a293-d9278d6f63f7")
+		)
+		(pin "B7"
+			(uuid "2cdf7b63-0131-439c-8a3c-4365e0e47402")
+		)
+		(pin "B8"
+			(uuid "efadc319-2fab-4292-9890-8a7afebe371c")
+		)
+		(pin "B9"
+			(uuid "071b70f7-cdee-48e6-966e-f9377460ea2f")
+		)
+		(pin "B12"
+			(uuid "476e0bcf-4381-4ab0-85c6-224970282ab2")
+		)
+		(pin "SH"
+			(uuid "344aa635-d4f5-4ebf-9827-5f686278d950")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:ESD_PRTR5V0U2X")
+		(at 121.64 43.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c08847a5-1987-4241-98db-132c2ea91587")
+		(property "Reference" "D1"
+			(at 121.64 50.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "PRTR5V"
+			(at 121.64 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:SOT143B_4N"
+			(at 121.64 43.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.64 43.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 121.64 43.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "463de046-7bba-4fbc-ba2d-844e072891a4")
+		)
+		(pin "2"
+			(uuid "edee2f5e-3fa6-455b-99c2-4b475e35f9c6")
+		)
+		(pin "3"
+			(uuid "5e8144f1-944f-451a-86b0-ba674ccadf42")
+		)
+		(pin "4"
+			(uuid "fd98c0a5-2714-4193-bda8-761713426ba4")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 144.38 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07e472c6-b3c2-4b7f-a921-d3bb8a0e5cd7")
+		(property "Reference" "R37"
+			(at 144.38 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "5k1 CC1"
+			(at 144.38 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 144.38 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.38 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 144.38 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8ee96b4-950f-4c80-b2d7-785c7bed1dfb")
+		)
+		(pin "2"
+			(uuid "05034f5a-0ae8-4852-b40f-b265e1de57a9")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 162.08 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bfa0f18d-e077-4069-84bb-ebf61181df95")
+		(property "Reference" "R38"
+			(at 162.08 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "5k1 CC2"
+			(at 162.08 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 162.08 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.08 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 162.08 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2013ec89-385a-47f3-ad8c-cc63af40977b")
+		)
+		(pin "2"
+			(uuid "46b97ba1-cc19-4db2-8803-d73e53679a80")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 178.47 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3d493cc8-5c54-4691-83f6-7892bde0ba38")
+		(property "Reference" "R1"
+			(at 178.47 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1M"
+			(at 178.47 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 178.47 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 178.47 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 178.47 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "64ffa237-d316-4d81-9c83-5f2226489d2f")
+		)
+		(pin "2"
+			(uuid "feb07e89-7dfa-4cd3-b495-ffec9b77d237")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 193.55 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "957f76a3-b1f6-400c-a823-1b236fa95aeb")
+		(property "Reference" "C1"
+			(at 193.55 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "4n7"
+			(at 193.55 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 193.55 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.55 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 193.55 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c53da42-e3a9-43ec-b1b5-ac5b088d4e83")
+		)
+		(pin "2"
+			(uuid "217e189f-a960-4582-a75a-8665a763b895")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:PTC_GENERIC")
+		(at 211.04 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3a3e200a-6c32-4730-9dbc-3d583d0205a8")
+		(property "Reference" "F1"
+			(at 211.04 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "MFFSMF050"
+			(at 211.04 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
+			(at 211.04 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 211.04 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 211.04 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c9df11dd-549b-496b-9b49-c9af58729fc6")
+		)
+		(pin "2"
+			(uuid "33d74c70-9765-4130-b6a2-f5e7a6717bfe")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:CONN_JST_PH_2P")
+		(at 252.88 44.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bcc0c877-24d2-428b-acba-3d6e12d51cc3")
+		(property "Reference" "J7"
+			(at 252.88 53.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "LiPo"
+			(at 252.88 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:JST_S2B_PH_SM4_TB"
+			(at 252.88 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.88 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 252.88 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "531e2544-01a7-4d83-888d-425a35ec3998")
+		)
+		(pin "2"
+			(uuid "74b0a49c-8636-4447-9002-102b6eda8391")
+		)
+		(pin "3"
+			(uuid "36f8e69f-cca3-4b79-ae01-bd7c99398d1c")
+		)
+		(pin "4"
+			(uuid "85a790a6-1f3f-4387-8f57-646f77d14f11")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:PTC_GENERIC")
+		(at 276.72 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d48c111a-b1bb-4e36-b59b-6d4f1f43c1d6")
+		(property "Reference" "F2"
+			(at 276.72 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "MFFSMF050"
+			(at 276.72 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
+			(at 276.72 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.72 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 276.72 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0dca7af4-2172-483f-879c-e21194afed0c")
+		)
+		(pin "2"
+			(uuid "ac4b5e99-57d9-455d-b9af-7f5a9c275f5d")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:DIODE_AC")
+		(at 296.07 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c8b48ddd-3db8-4dfa-a7b8-b24ea1421f88")
+		(property "Reference" "D2"
+			(at 296.07 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "PMEG6020"
+			(at 296.07 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:SODFL3517X110N"
+			(at 296.07 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 296.07 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 296.07 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "ff6fce79-c54e-4b55-ac9c-483f9b7a861c")
+		)
+		(pin "C"
+			(uuid "bc4c8c30-3e3a-4410-b57b-c5e3c0ea15f5")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:MOSFET_PMOS_DIODE_SIA817")
+		(at 337.36 44.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d4a4774-d19c-4959-a91f-81c7d9fe2659")
+		(property "Reference" "Q2"
+			(at 337.36 53.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "SIA817"
+			(at 337.36 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:SON65P205X205X75-8N-MWSD"
+			(at 337.36 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.36 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 337.36 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "G"
+			(uuid "de824b47-e7d1-4db7-9cb3-0b399bdae6e5")
+		)
+		(pin "D"
+			(uuid "f595b475-3014-478c-b392-f1d3d3d19c79")
+		)
+		(pin "D2"
+			(uuid "63aad38d-dd69-4441-b876-9533225e9a32")
+		)
+		(pin "S"
+			(uuid "bc7a546d-fbe4-45bd-9725-39805b4a2311")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:MOSFET_PMOS_DIODE_SIA817")
+		(at 367.14 44.96 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2ef8375a-4894-473e-8b2a-bbff00760ed7")
+		(property "Reference" "Q2"
+			(at 367.14 53.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "SIA817"
+			(at 367.14 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:SON65P205X205X75-8N-MWSD"
+			(at 367.14 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 367.14 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 367.14 44.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "f4b84cbe-ef35-4698-9c97-c4f23f80b4c7")
+		)
+		(pin "K"
+			(uuid "a69b8209-ceef-4276-8605-9597cdc1fe41")
+		)
+		(pin "K2"
+			(uuid "6b344f40-b78c-45ce-b33b-a6db7ab42007")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "Q2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:DIODE_AC")
+		(at 390.43 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c42bf531-6880-4fe0-8392-6820269f92ff")
+		(property "Reference" "D3"
+			(at 390.43 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "PMEG6020"
+			(at 390.43 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:SODFL3517X110N"
+			(at 390.43 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 390.43 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 390.43 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "afa631f5-b13c-4321-b671-638cfa16c543")
+		)
+		(pin "C"
+			(uuid "3d1b9a45-c540-4284-902e-4b7035080a61")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 407.37 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3c331c37-56d0-4de2-9fbd-cf289aa4d6de")
+		(property "Reference" "R27"
+			(at 407.37 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "390R"
+			(at 407.37 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 407.37 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 407.37 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 407.37 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ad6ac64-1976-4923-87fb-edee6912328b")
+		)
+		(pin "2"
+			(uuid "dce90575-3a04-41c7-b19f-e6b4d33908c5")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:LED_AC")
+		(at 424.86 41.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "384d78e2-af5d-42bc-8922-2c8316d432d4")
+		(property "Reference" "DL3"
+			(at 424.86 45.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "gruen USB"
+			(at 424.86 36.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:LED_0603_AK"
+			(at 424.86 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 424.86 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 424.86 41.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "5307bb3e-fed7-494c-aed4-217c5cb45da1")
+		)
+		(pin "C"
+			(uuid "b8ef77db-da8d-475a-b0e8-3a5790757440")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "DL3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:BQ24195L_QFN24")
+		(at 135.13 184.325 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9d933807-569d-4ec3-80b3-5db59cb87328")
+		(property "Reference" "U5"
+			(at 135.13 197.485 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "BQ24195L"
+			(at 135.13 171.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:QFN24_BQ24195L"
+			(at 135.13 184.325 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.13 184.325 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 135.13 184.325 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7f3a5560-05cf-450a-b858-fe04e604edb8")
+		)
+		(pin "3"
+			(uuid "87b50cfc-5faf-482f-bf07-d3c814738d1e")
+		)
+		(pin "4"
+			(uuid "19280f19-2c1f-43ad-8084-10fd9f5940eb")
+		)
+		(pin "5"
+			(uuid "e917386d-6780-4b97-b08f-da88ca303e7f")
+		)
+		(pin "6"
+			(uuid "21bbc1f5-f146-44ac-bdcf-7fd8035cee70")
+		)
+		(pin "7"
+			(uuid "ee42b46f-1b10-4eb4-9853-8eba060c7161")
+		)
+		(pin "8"
+			(uuid "8c896ade-1b77-43d5-81f2-fe517c3e5a4c")
+		)
+		(pin "9"
+			(uuid "0d635ab3-94a9-4d2c-bd87-c4bc61c47f83")
+		)
+		(pin "10"
+			(uuid "890a537e-6e3f-49d5-af74-e6ac0d08bac5")
+		)
+		(pin "11"
+			(uuid "c0a27a8e-0f62-49a7-9aa3-45b723b37940")
+		)
+		(pin "12"
+			(uuid "8557ee5b-1e11-441c-8cee-ec4dcf88c5d3")
+		)
+		(pin "13"
+			(uuid "e31249c8-cccc-4c7e-9629-fa4f85f972fc")
+		)
+		(pin "14"
+			(uuid "16a114fa-412c-4d38-a952-48c217e2e8eb")
+		)
+		(pin "19"
+			(uuid "a7d33cdd-4bf1-4228-b35a-9dfbef03ba09")
+		)
+		(pin "20"
+			(uuid "27671e66-2ab7-4305-8feb-f78fff7b5850")
+		)
+		(pin "21"
+			(uuid "fb6eb53f-a698-4189-bac2-a08ee95da106")
+		)
+		(pin "25"
+			(uuid "2929ec84-6c50-432b-9adf-6bdba93095e4")
+		)
+		(pin "1"
+			(uuid "ff1cbe76-8f16-4fab-8d34-b060936e963f")
+		)
+		(pin "24"
+			(uuid "ce25a514-0bb7-4abe-bb7a-69c4bea1565f")
+		)
+		(pin "15"
+			(uuid "7c965b03-e855-4f66-b6fa-63baf1884852")
+		)
+		(pin "16"
+			(uuid "873e6d85-fcbb-474f-a3f3-98608d9346d9")
+		)
+		(pin "22"
+			(uuid "cc1e6108-d8bf-4f66-b247-8f75bb616d92")
+		)
+		(pin "23"
+			(uuid "af252660-df87-4cc7-8288-55025cb93d33")
+		)
+		(pin "17"
+			(uuid "c22d8708-d3f4-4908-b422-6fd42c670702")
+		)
+		(pin "18"
+			(uuid "f1b6e20c-c994-4326-948b-5afd603853aa")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:L_GENERIC")
+		(at 202.91 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b5a5d250-97c9-460c-af12-11ec3b2c54a9")
+		(property "Reference" "L2"
+			(at 202.91 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "2u2"
+			(at 202.91 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:SRP4020"
+			(at 202.91 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 202.91 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 202.91 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f11d2a37-2891-4f6f-8cda-aa75458fb846")
+		)
+		(pin "2"
+			(uuid "2ca692a8-6ddb-4a70-9889-c119c9084a3f")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 217.99 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7073bb77-9f35-4ac1-865e-4e14bb26f48c")
+		(property "Reference" "C12"
+			(at 217.99 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 217.99 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 217.99 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.99 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 217.99 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "332ba244-f061-405b-ab3a-521060e08873")
+		)
+		(pin "2"
+			(uuid "90a0d312-2dc1-4d89-9687-48748d88078c")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 233.07 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1cb28d5a-fbec-40af-ab15-377d8002affe")
+		(property "Reference" "C13"
+			(at 233.07 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 233.07 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 233.07 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.07 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 233.07 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e9a0004-b091-48a0-b13e-67e33b035717")
+		)
+		(pin "2"
+			(uuid "bab7daec-bf15-4d54-9809-c4c5a89661ec")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 248.15 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "152505c8-5f1c-4388-b6e5-5e7f59c8e3d7")
+		(property "Reference" "C14"
+			(at 248.15 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 248.15 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 248.15 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.15 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 248.15 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a08115af-47b6-4e4f-bd6a-956403b7a548")
+		)
+		(pin "2"
+			(uuid "c3a19b07-5f19-4a01-ae31-ff09c95dbfa4")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 263.23 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9fedfc7a-5397-4342-9a76-7dbd2316f222")
+		(property "Reference" "C15"
+			(at 263.23 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "47n"
+			(at 263.23 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 263.23 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 263.23 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 263.23 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08525338-4d88-4080-8ec4-593eb1b14f4b")
+		)
+		(pin "2"
+			(uuid "a1790dad-db8e-4080-9fbc-9f89a43d1715")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 82.43 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "072def0e-c035-4d8c-a93a-46ce381b4371")
+		(property "Reference" "C16"
+			(at 82.43 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "4u7"
+			(at 82.43 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 82.43 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.43 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 82.43 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efe4ed4d-05cb-47b3-992f-7434b5dc6fd8")
+		)
+		(pin "2"
+			(uuid "affd6b38-cbbe-4e0e-b776-7c0833adfc16")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 97.51 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "056d36bf-25e0-4cb4-b521-822291d61f4d")
+		(property "Reference" "C19"
+			(at 97.51 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 97.51 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 97.51 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.51 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 97.51 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fcaa22e7-f95e-4814-bfc2-6fa3c5f0714e")
+		)
+		(pin "2"
+			(uuid "044c4017-92da-4e2e-8543-8769fd8ef4cd")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 112.59 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f590dcde-fb6f-46a1-bb4b-4def022ad028")
+		(property "Reference" "C20"
+			(at 112.59 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 112.59 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 112.59 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 112.59 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 112.59 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8d7edc9-5636-430b-98ea-f5fce7626e44")
+		)
+		(pin "2"
+			(uuid "5e621d6c-932a-4b4f-90f4-bc92a892cd94")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 127.67 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1cdd917d-7788-4d3d-acbc-e72682616cd4")
+		(property "Reference" "C22"
+			(at 127.67 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 127.67 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 127.67 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127.67 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 127.67 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f305cab-3ffe-46a3-a73a-724739602309")
+		)
+		(pin "2"
+			(uuid "02b9697a-a72b-4e41-a431-32f870e09915")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 142.75 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "491e86fb-66c6-4215-aa7e-77168e979340")
+		(property "Reference" "C32"
+			(at 142.75 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 142.75 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 142.75 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.75 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 142.75 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ebd5418-8110-4e33-9846-17dfb4ddd119")
+		)
+		(pin "2"
+			(uuid "024daa90-891b-4dd7-90e3-fe8a8dc03baa")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 157.83 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3dffdc78-12d6-4639-a7f7-0196238acd0f")
+		(property "Reference" "R28"
+			(at 157.83 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "330R"
+			(at 157.83 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 157.83 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.83 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 157.83 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d87d773f-f85a-475d-9afa-639eb27e01ad")
+		)
+		(pin "2"
+			(uuid "9ac03570-1285-4c4c-a740-568e297d0991")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 172.91 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2bc3bc4-378b-4289-9372-831942a27de4")
+		(property "Reference" "R29"
+			(at 172.91 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 172.91 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 172.91 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.91 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.91 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c78aedb7-68b5-47cc-9277-a3ed222725c3")
+		)
+		(pin "2"
+			(uuid "dc7f9e2b-e01c-4f22-812d-b563b6fa98a0")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 187.99 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4cd703df-30b6-49c6-8cdb-1847b85fd8c9")
+		(property "Reference" "R30"
+			(at 187.99 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "5k49"
+			(at 187.99 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 187.99 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.99 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 187.99 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04537bfd-542a-4469-adfe-4b435fc3e4a7")
+		)
+		(pin "2"
+			(uuid "48e26b35-5c87-4899-afd8-ca4bb6015088")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 203.07 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3539d768-b7d5-4834-9c0f-6018dfe82fb7")
+		(property "Reference" "R24"
+			(at 203.07 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 203.07 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 203.07 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.07 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 203.07 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb860e1e-0e1b-4c64-b08c-7ffe021d5b78")
+		)
+		(pin "2"
+			(uuid "522c86dd-4b78-4bf6-9eca-32077c08fb25")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 218.15 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9efdad96-c232-45e2-9081-091802f5fd3e")
+		(property "Reference" "R23"
+			(at 218.15 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "330R"
+			(at 218.15 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 218.15 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.15 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 218.15 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4c546c0-73cd-4b8f-adcd-5860dafc7273")
+		)
+		(pin "2"
+			(uuid "628051ae-0be1-43b5-9eb7-003870d98c0c")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 233.23 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ce0486c-2893-432c-9fb0-01033bbdeeca")
+		(property "Reference" "R25"
+			(at 233.23 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 233.23 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 233.23 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.23 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 233.23 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efa8a298-971e-44b7-8549-659135bc9c8c")
+		)
+		(pin "2"
+			(uuid "aa03d3f1-fe2e-4f15-a0f0-85dafffd1a4b")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 248.31 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5fd02465-400f-4a9d-9895-702cdad126da")
+		(property "Reference" "R26"
+			(at 248.31 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 248.31 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 248.31 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.31 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 248.31 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08c17448-312e-4fc3-9ba3-a4d8b9cc9ddb")
+		)
+		(pin "2"
+			(uuid "1a596018-eed3-4fdb-b314-bf26cf2a6f61")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 263.39 253.835 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "160378ce-775b-4690-8abe-8c4be6d134ad")
+		(property "Reference" "R19"
+			(at 263.39 258.105 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 263.39 249.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 263.39 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 263.39 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 263.39 253.835 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5a85245-db76-4c9d-8921-de83d8641621")
+		)
+		(pin "2"
+			(uuid "bdc667f4-5b8d-4fc5-9b69-45ce4062dd37")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:MOSFET_NCH_SOT523")
+		(at 88.78 276.995 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e480d333-81e6-456d-a484-984ad8c02256")
+		(property "Reference" "Q3"
+			(at 88.78 283.805 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 88.78 270.185 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:SOTFL50P160X78-3"
+			(at 88.78 276.995 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.78 276.995 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 88.78 276.995 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "G"
+			(uuid "377388d6-634d-43ca-a908-c2638a8633b6")
+		)
+		(pin "D"
+			(uuid "cdd9e193-0ec7-4657-995e-9caa3944618f")
+		)
+		(pin "S"
+			(uuid "c3678381-194e-4144-9c46-af451568f541")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:LED_AC")
+		(at 114.27 274.455 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e517695f-cd5c-4c4b-a556-885cd488ade0")
+		(property "Reference" "DL2"
+			(at 114.27 278.725 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "orange Laden"
+			(at 114.27 270.185 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:LED_0603_AK"
+			(at 114.27 274.455 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.27 274.455 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.27 274.455 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "b1492436-a51c-4cc4-9ccd-61d6c0a49ae8")
+		)
+		(pin "C"
+			(uuid "87a7573d-8903-45c0-b57f-4f37dbcf7fb8")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "DL2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:AP2112K_33_SOT25")
+		(at 309.17 139.245 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "137696bb-30b5-441d-b56e-37b1c50eb3a9")
+		(property "Reference" "U6"
+			(at 309.17 147.325 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "AP2112K-3.3 -> +3V3"
+			(at 309.17 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:SOT25"
+			(at 309.17 139.245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.17 139.245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 309.17 139.245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4bdaed4-caea-41e6-8489-e5a4ba859ec3")
+		)
+		(pin "3"
+			(uuid "5914263e-12d5-45ac-a199-3964f8a7a65a")
+		)
+		(pin "5"
+			(uuid "8612acaa-2eec-497f-8a7a-b10ea9067108")
+		)
+		(pin "2"
+			(uuid "3a421ca9-313c-4cee-b2f6-5e1f77a31804")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:SAMD21G18A_QFN48")
+		(at 574.69 204.565 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9dea0c85-a408-4ff9-939e-f7ea6f3f905b")
+		(property "Reference" "U1"
+			(at 574.69 232.965 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "D21G18"
+			(at 574.69 176.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:QFN48_SAMD21G18A"
+			(at 574.69 204.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 574.69 204.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 574.69 204.565 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5c55df1-d9c7-4683-b39c-22ea2b873cd4")
+		)
+		(pin "2"
+			(uuid "c430f3ea-eb7b-407c-8ac4-929a7a9b67fe")
+		)
+		(pin "3"
+			(uuid "e419a47f-b977-4403-ac95-474fbf64bd3a")
+		)
+		(pin "4"
+			(uuid "393e9eae-a859-4f18-b127-ec242f9ccc50")
+		)
+		(pin "7"
+			(uuid "dd29182b-e040-4edd-b3de-ea424529e618")
+		)
+		(pin "8"
+			(uuid "f7498152-0718-447e-ba3e-8e2e5e541566")
+		)
+		(pin "9"
+			(uuid "e3dfb6df-4218-412d-a7ab-cfff8d39ffb7")
+		)
+		(pin "10"
+			(uuid "859ab43b-c9d0-4b82-a134-0be2d9d84c8d")
+		)
+		(pin "11"
+			(uuid "b050ffbd-4be9-46e2-8726-2738654db9d3")
+		)
+		(pin "12"
+			(uuid "834803c9-9f8f-4208-a608-d8512c90afd2")
+		)
+		(pin "13"
+			(uuid "a9962e15-2a54-4b9e-a8ef-ec1b10fa20d2")
+		)
+		(pin "14"
+			(uuid "5546b439-032d-4dc1-bd48-93118c5caa6a")
+		)
+		(pin "15"
+			(uuid "ac082912-58c9-47c2-8c30-a6aa0669b843")
+		)
+		(pin "16"
+			(uuid "d5a640db-2711-4bd2-8ce1-a1b63e5d7205")
+		)
+		(pin "19"
+			(uuid "37450242-7b5d-4e2f-8881-44a2a13ad69e")
+		)
+		(pin "20"
+			(uuid "2d19b70e-39a8-4b9f-a73e-78929ffdfcb5")
+		)
+		(pin "21"
+			(uuid "562607e4-f7e8-49eb-ac27-a578eed7a68b")
+		)
+		(pin "22"
+			(uuid "f701d7b2-487c-4887-bfcf-b0aa41713f24")
+		)
+		(pin "23"
+			(uuid "7a8e5f88-4dd5-47a1-9fed-7571a38e8b8c")
+		)
+		(pin "24"
+			(uuid "5af866cf-aa68-4b8b-ad03-957c3c8bae06")
+		)
+		(pin "25"
+			(uuid "da9bd310-d0aa-47dc-97e3-583a56b0a5f7")
+		)
+		(pin "26"
+			(uuid "5abb5c8f-99df-4698-a994-b0546cd3d5bc")
+		)
+		(pin "27"
+			(uuid "9a087e39-3206-4655-b3d6-5fa9803a8ca2")
+		)
+		(pin "28"
+			(uuid "8b7fdd37-494c-46f8-a245-2f36df2f181b")
+		)
+		(pin "29"
+			(uuid "0a751e8a-9802-4199-9ccb-68b0a9324637")
+		)
+		(pin "30"
+			(uuid "ab1e03be-5b15-4658-b007-ab6bf58763de")
+		)
+		(pin "31"
+			(uuid "acd86558-01df-4a42-a87a-00c4639c0b32")
+		)
+		(pin "32"
+			(uuid "b5990600-037e-4038-91ba-d67b2847a748")
+		)
+		(pin "33"
+			(uuid "91d258f1-7c44-474a-8414-1d3fa33d2375")
+		)
+		(pin "34"
+			(uuid "f8ef14d7-3e21-4edb-889d-e0e08e2a0599")
+		)
+		(pin "37"
+			(uuid "21fd2629-d517-41ff-ae4c-9e88eb576e1b")
+		)
+		(pin "38"
+			(uuid "d1b10b02-1fcf-4e0a-b875-e8e373d67d59")
+		)
+		(pin "39"
+			(uuid "89e2af2c-e7f0-4f95-8473-ffdbdbacc41c")
+		)
+		(pin "40"
+			(uuid "6a957342-6c08-4a40-9616-4a2bc0537ef4")
+		)
+		(pin "41"
+			(uuid "ef42f127-371d-4a6f-bb25-a002cd98919e")
+		)
+		(pin "45"
+			(uuid "9d4bbf34-46f5-485e-a7a1-46f68a18ad0e")
+		)
+		(pin "46"
+			(uuid "ce3d7fb7-6082-48d1-af18-8f2f114fa1be")
+		)
+		(pin "47"
+			(uuid "429432db-4b51-4489-9927-122a7589036e")
+		)
+		(pin "48"
+			(uuid "7d0bd756-2bc3-4cdd-90d6-322825cb61da")
+		)
+		(pin "6"
+			(uuid "b08d1eea-834b-492e-997a-caab20748c43")
+		)
+		(pin "17"
+			(uuid "00ff071f-6baa-4b16-8701-500f98e47d81")
+		)
+		(pin "36"
+			(uuid "aa1b61af-4f08-4c64-8ba6-b271330eeeae")
+		)
+		(pin "43"
+			(uuid "24e2124b-4d5a-4bb1-a622-609bb618c3cb")
+		)
+		(pin "44"
+			(uuid "68b9bd3c-71f9-492b-be0c-981dc1ea4a69")
+		)
+		(pin "5"
+			(uuid "9579f0fb-90c5-4f96-970d-10ac1ae66f3f")
+		)
+		(pin "18"
+			(uuid "f06da8ef-387f-4ad0-ba03-4de1d08dc877")
+		)
+		(pin "35"
+			(uuid "e038e5d8-b8c1-4700-88fd-48509c63a3a4")
+		)
+		(pin "42"
+			(uuid "f502e51b-0352-483e-883a-232ae4677e56")
+		)
+		(pin "49"
+			(uuid "3ae3080f-f558-4ef4-ba6f-edf86f7ba231")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 647.47 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f13e5727-ae82-423a-8098-4719095ee2ff")
+		(property "Reference" "C17"
+			(at 647.47 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 647.47 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 647.47 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 647.47 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 647.47 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9a30dab4-820f-4d02-9bc5-839cc1e2406d")
+		)
+		(pin "2"
+			(uuid "164cf4c8-1a2b-45af-a87d-335f04e2c4f5")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 662.55 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9fe41cc2-a950-4c58-84c8-f66b789b7c63")
+		(property "Reference" "C18"
+			(at 662.55 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 662.55 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 662.55 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 662.55 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 662.55 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45f7a1b7-b704-4b13-ba56-00549501bbe8")
+		)
+		(pin "2"
+			(uuid "ab88489e-54ac-431e-8f42-c42a838da94b")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 677.63 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a0126678-7219-40fa-96a1-cbeabaec5f1f")
+		(property "Reference" "C21"
+			(at 677.63 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 677.63 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 677.63 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 677.63 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 677.63 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "71f7c819-f8a5-4cf1-8f35-7ab76d1f5a6f")
+		)
+		(pin "2"
+			(uuid "86efcc39-bbe7-4b51-ba55-1be984b331fa")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 692.71 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ebd76b8f-bc57-410f-9cdd-fe6fb2dd53fa")
+		(property "Reference" "C24"
+			(at 692.71 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 692.71 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 692.71 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 692.71 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 692.71 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "904530c8-7649-4594-9f9c-951c0854fa63")
+		)
+		(pin "2"
+			(uuid "7639198c-4fef-4e33-99a4-258ccc5678bf")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 516.99 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e0d5e101-c757-4e0e-b966-0f27ebd709b1")
+		(property "Reference" "C25"
+			(at 516.99 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 516.99 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 516.99 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 516.99 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 516.99 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53d98e85-47c8-4f53-87d7-9fa67c49537a")
+		)
+		(pin "2"
+			(uuid "bc22f3ca-70ab-47c5-bab3-762fb141f3fe")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 532.07 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba103751-245e-4517-b4c2-061bf5d065c4")
+		(property "Reference" "C26"
+			(at 532.07 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 532.07 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 532.07 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 532.07 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 532.07 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b1d1dfa-947b-463a-93d5-2fecb23a028f")
+		)
+		(pin "2"
+			(uuid "c616933a-f5df-45d2-87e2-a31ec728a78b")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:FERRITE_GENERIC")
+		(at 550.11 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c66293e4-c540-46a9-8cca-dc5dbbae372c")
+		(property "Reference" "L3"
+			(at 550.11 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "BLM18PG471"
+			(at 550.11 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 550.11 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 550.11 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 550.11 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c29d5027-9513-45d2-8b95-4d2511382e58")
+		)
+		(pin "2"
+			(uuid "1e710f01-1044-4910-b89c-5495696ba995")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 568.15 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4cddc6ce-278a-4d6a-8787-b2d53fffba29")
+		(property "Reference" "C23"
+			(at 568.15 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 568.15 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 568.15 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 568.15 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 568.15 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eedbf256-393c-483f-a015-7af495c17287")
+		)
+		(pin "2"
+			(uuid "80517c6a-3f20-4981-b6ec-e4f3d79a02bf")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 583.23 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "95b601d5-7589-4c0f-9ffc-5902ebfb222c")
+		(property "Reference" "C27"
+			(at 583.23 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "4u7"
+			(at 583.23 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 583.23 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 583.23 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 583.23 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3b18bde-d9ff-42f5-9e96-bf3cc4c8be55")
+		)
+		(pin "2"
+			(uuid "56841441-2dc9-468c-967c-38d89745be19")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 598.31 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb802ebc-5df6-4a43-8b44-a9a81092fe03")
+		(property "Reference" "C5"
+			(at 598.31 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "4u7"
+			(at 598.31 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 598.31 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 598.31 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 598.31 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "867fe525-1dbe-4540-a05d-4421cba308ea")
+		)
+		(pin "2"
+			(uuid "c0c88e21-0181-40f4-a96e-4502cc163234")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 613.39 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2f68b01d-60e4-4442-a8c9-9a1d06aed0e1")
+		(property "Reference" "C7"
+			(at 613.39 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 613.39 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 613.39 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 613.39 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 613.39 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7cddb62-bc86-431f-ad46-b5a47945686b")
+		)
+		(pin "2"
+			(uuid "5f2ad991-d929-4a91-b55e-30e3620ef1ed")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 628.47 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1dd9c040-6a53-49c2-a3aa-811effd0a991")
+		(property "Reference" "C6"
+			(at 628.47 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 628.47 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 628.47 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 628.47 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 628.47 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f6e70db0-bdf4-47c7-9ab9-59d34e2e2620")
+		)
+		(pin "2"
+			(uuid "68289d35-9d6f-40aa-90da-b1de1ab2c5e9")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 643.55 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "26551f57-69de-4f86-beba-c9d067e97170")
+		(property "Reference" "R8"
+			(at 643.55 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "330k"
+			(at 643.55 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 643.55 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 643.55 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 643.55 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d37d1dd-14b4-4b02-aa9e-8f8e3b4b9e98")
+		)
+		(pin "2"
+			(uuid "469be746-7e18-4c56-8e89-3666a8244c35")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 658.63 294.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0c330d85-14ed-476b-a094-10474adad492")
+		(property "Reference" "R9"
+			(at 658.63 298.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1M2"
+			(at 658.63 290.045 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 658.63 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 658.63 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 658.63 294.315 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b75a2b89-6d08-4e37-a3d4-cb063d358139")
+		)
+		(pin "2"
+			(uuid "2285c817-d304-4c86-a161-37bbdea548a3")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:CRYSTAL_32K768")
+		(at 727.1 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "54e7ff34-31d6-423a-aa62-8e4e2ff03c84")
+		(property "Reference" "Y1"
+			(at 727.1 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "32768Hz"
+			(at 727.1 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:ABS07_CRYSTAL"
+			(at 727.1 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 727.1 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 727.1 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "136c7637-89de-452a-b919-f682d70e8c66")
+		)
+		(pin "2"
+			(uuid "8eb1b521-397f-4323-a48c-5c42af6dc52f")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 743.49 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a1177136-2d90-4769-b82c-5297789eb89a")
+		(property "Reference" "C3"
+			(at 743.49 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "20p"
+			(at 743.49 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 743.49 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 743.49 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 743.49 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7f7c437-b392-4e4c-9249-f1cb7d683e04")
+		)
+		(pin "2"
+			(uuid "92872583-c043-4c79-9d51-933865318880")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 758.57 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4416beb6-6548-470e-98a8-63a2f40c0167")
+		(property "Reference" "C4"
+			(at 758.57 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "20p"
+			(at 758.57 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 758.57 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 758.57 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 758.57 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0baa70ba-af80-437d-b2fd-63001c0ac165")
+		)
+		(pin "2"
+			(uuid "befe8eec-7785-4a02-abfb-2056257abc3b")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:SW_PUSH_PTS820")
+		(at 361.3 139.245 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a5a74b92-4622-4466-aa40-06aedaf2886f")
+		(property "Reference" "PB1"
+			(at 361.3 147.325 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "Reset"
+			(at 361.3 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:PTS820_NO_HOLES"
+			(at 361.3 139.245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.3 139.245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 361.3 139.245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "809f184a-045d-4b31-9be6-4f19782edb12")
+		)
+		(pin "6"
+			(uuid "74c3e00d-d830-4e18-be1f-c61c6d9ba692")
+		)
+		(pin "1"
+			(uuid "b0d65483-e53b-4d2f-a3f3-abb1277d3fd5")
+		)
+		(pin "2"
+			(uuid "6a2948cb-e061-46a7-9386-a2b712a07cab")
+		)
+		(pin "3"
+			(uuid "0508e5a9-172d-4b20-9704-a61670b45a13")
+		)
+		(pin "4"
+			(uuid "7647c41b-46e0-4c50-92c5-c7b58f2b373d")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "PB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 382.73 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d6957d8d-3398-4f23-8680-80bbff60d67e")
+		(property "Reference" "R3"
+			(at 382.73 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "330R"
+			(at 382.73 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 382.73 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 382.73 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 382.73 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b5c6f81-e747-4384-b69e-323ebabf2dcf")
+		)
+		(pin "2"
+			(uuid "a0ef706f-906c-451d-9231-88a13b72332e")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 397.81 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e778208-6e17-490e-8bdc-7648243ba1d1")
+		(property "Reference" "R6"
+			(at 397.81 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "330R"
+			(at 397.81 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 397.81 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 397.81 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 397.81 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "260b6fb1-cf8c-4b73-b94c-9e6860e4d30c")
+		)
+		(pin "2"
+			(uuid "05a746f0-4091-4de9-a15c-09b043c43b44")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 412.89 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0636199d-0c83-4365-87ee-9c9802fe96e4")
+		(property "Reference" "R5"
+			(at 412.89 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 412.89 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 412.89 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 412.89 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 412.89 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a0aa0f2-569f-4176-b0c2-11605dd1ffa4")
+		)
+		(pin "2"
+			(uuid "7ca6ad5b-1635-4689-a53d-1167d74ee853")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 427.97 135.435 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "841a6530-6a81-4969-9b48-4de9d50de0e1")
+		(property "Reference" "R10"
+			(at 427.97 139.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 427.97 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 427.97 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 427.97 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 427.97 135.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "acc37f0c-56b2-4fa5-a016-a944fd79caef")
+		)
+		(pin "2"
+			(uuid "1bcc399c-4eb1-40c4-bdd5-8b715cab1d2a")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 354.95 163.675 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac617540-fa2b-4c11-834b-b0fc787896d9")
+		(property "Reference" "C2"
+			(at 354.95 167.945 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 354.95 159.405 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 354.95 163.675 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 354.95 163.675 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 354.95 163.675 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d752787b-0cdf-40a8-acd8-12fa68d31c25")
+		)
+		(pin "2"
+			(uuid "df376e37-c5e1-4acd-9e49-cb80f26f2b7a")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 82.43 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ab33585-93bc-4ce7-9308-61ba04e79ab8")
+		(property "Reference" "R13"
+			(at 82.43 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "4k7"
+			(at 82.43 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 82.43 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.43 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 82.43 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1a401c8-3e8a-4bff-9b79-0099d0289ac5")
+		)
+		(pin "2"
+			(uuid "4ba47d10-2fdd-4ace-862d-31c91f407d64")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 97.51 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61cf221b-3b2b-447c-aa5c-08aa2b457804")
+		(property "Reference" "R14"
+			(at 97.51 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "4k7"
+			(at 97.51 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 97.51 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.51 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 97.51 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d27a030c-0972-4f31-b794-3f650d4b5f01")
+		)
+		(pin "2"
+			(uuid "b6b8c0ae-5f93-40d9-9a3f-9be80c3647cb")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:CONN_SWD_1x5")
+		(at 473.75 141.785 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d5e52d73-ce29-4f07-8b55-46afcaad504e")
+		(property "Reference" "J12"
+			(at 473.75 152.405 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "SWD-Programmierheader"
+			(at 473.75 131.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 473.75 141.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 473.75 141.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 473.75 141.785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b92c5823-9d9a-4895-abb5-b4faca7bab72")
+		)
+		(pin "2"
+			(uuid "d02123da-fdcf-45ed-b4fe-165ccee5d074")
+		)
+		(pin "3"
+			(uuid "f49eaa69-b8e0-412d-8665-1b42b678a885")
+		)
+		(pin "4"
+			(uuid "599fbe6e-22e9-461b-9c35-d94c8ac36e6e")
+		)
+		(pin "5"
+			(uuid "2622082d-575e-46c3-a98e-d86baf4720df")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:MICROSD_PUSHPUSH")
+		(at 143.29 361.825 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "92f04b13-8923-439f-8320-f83e109b60f1")
+		(property "Reference" "J10"
+			(at 143.29 374.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "MicroSD"
+			(at 143.29 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Card:microSD_HC_Molex_104031-0811"
+			(at 143.29 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.29 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 143.29 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "706365f9-31cf-4325-b872-b7b3a120131d")
+		)
+		(pin "2"
+			(uuid "0ef2cc6c-cd70-485f-a604-1862681c4e26")
+		)
+		(pin "3"
+			(uuid "c21c23b3-fce6-49f3-bb3a-bde52bc0d05c")
+		)
+		(pin "5"
+			(uuid "72b883d6-bc20-46fe-b46e-9759b4fec37d")
+		)
+		(pin "7"
+			(uuid "d070b27c-9f53-4aed-92ce-fc8404083378")
+		)
+		(pin "8"
+			(uuid "eb3578a2-486f-4f8e-9f0e-d54ed6aff6ad")
+		)
+		(pin "9"
+			(uuid "597cdced-51ac-4e91-998b-dabc7f3656c5")
+		)
+		(pin "4"
+			(uuid "aa1586e2-4568-4652-8da1-17582b8f52c2")
+		)
+		(pin "6"
+			(uuid "1fb53109-733c-4efb-8b0f-6468c3a43e8d")
+		)
+		(pin "10"
+			(uuid "c9173b97-5e71-484d-91eb-4dd1d8bf35b3")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 172.93 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e027ce0-8850-40ea-bdb4-592d483e3d00")
+		(property "Reference" "C43"
+			(at 172.93 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10u (SD)"
+			(at 172.93 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 172.93 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.93 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.93 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c093e23e-a715-4d94-9f17-04104fc17b19")
+		)
+		(pin "2"
+			(uuid "46f3a9d3-49ba-43cf-b3ad-9326bc7053cb")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:C_GENERIC")
+		(at 192.28 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a0c18cc0-50bc-44b7-9ed6-99f3115e1bdb")
+		(property "Reference" "C44"
+			(at 192.28 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "100n (SD)"
+			(at 192.28 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 192.28 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 192.28 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 192.28 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bdb107f0-01e1-482f-b1d5-261010ad3af1")
+		)
+		(pin "2"
+			(uuid "4aa1c887-e3ec-4083-98f8-eb106b34f3c3")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "C44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 217.13 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e4d0b393-2164-4be0-b8cc-8b4377f49ff9")
+		(property "Reference" "R40"
+			(at 217.13 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "10k (SD_CS Pullup)"
+			(at 217.13 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 217.13 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.13 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 217.13 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "29e1c9c7-aec3-46d3-bec9-b6eebe172a3b")
+		)
+		(pin "2"
+			(uuid "9338935e-3806-41b3-9e8c-296e8c92620e")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:LED_AC")
+		(at 394 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2705483c-a2f9-49a3-93b3-536711077176")
+		(property "Reference" "DL10"
+			(at 394 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "gruen GPS-Fix"
+			(at 394 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:LED_0603_AK"
+			(at 394 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 394 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 394 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "57afe393-aec5-4d17-a434-9f8c2a380cae")
+		)
+		(pin "C"
+			(uuid "f63a4748-797d-4a4d-b3cc-33fffc720c9e")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "DL10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:LED_AC")
+		(at 418.3 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "531623c0-25d1-4167-bf4a-e11bad891813")
+		(property "Reference" "DL11"
+			(at 418.3 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "blau Aufnahme"
+			(at 418.3 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:LED_0603_AK"
+			(at 418.3 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 418.3 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 418.3 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "e8f2feee-f40b-4ddc-868e-90af55440551")
+		)
+		(pin "C"
+			(uuid "b6830a83-965d-41fd-acd9-6e717eb44262")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "DL11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:LED_AC")
+		(at 440.95 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c04557bb-322c-4033-bc90-8781cf711a84")
+		(property "Reference" "DL12"
+			(at 440.95 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "rot Fehler"
+			(at 440.95 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "RaceTracker:LED_0603_AK"
+			(at 440.95 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 440.95 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 440.95 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "a1455c9c-65a6-447b-9bc1-cc767225437a")
+		)
+		(pin "C"
+			(uuid "4ea16c39-dc7a-448b-9c45-f2ea1d20cc44")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "DL12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 458.99 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d6d33905-0deb-44cb-8aa8-ecc19daeeb42")
+		(property "Reference" "R44"
+			(at 458.99 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 458.99 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 458.99 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 458.99 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 458.99 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d94e578-779b-4af5-bb53-10e5a3362798")
+		)
+		(pin "2"
+			(uuid "26b456e2-5329-4531-ac28-fab5308afaa0")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 474.07 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f04b7f53-c2cd-44f4-91cb-9ff1d8fc77d8")
+		(property "Reference" "R45"
+			(at 474.07 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 474.07 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 474.07 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 474.07 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 474.07 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "287f8001-338c-432b-99a2-c2c691a4d19c")
+		)
+		(pin "2"
+			(uuid "6698c59f-53d3-4d25-beb8-f4503b850c04")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:R_GENERIC")
+		(at 489.15 352.935 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "24b7d793-74d0-456e-b031-8ff00e80b3cf")
+		(property "Reference" "R46"
+			(at 489.15 357.205 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 489.15 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 489.15 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 489.15 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 489.15 352.935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ab9b5fb-0d0a-4c65-a98c-ae947e91e9d8")
+		)
+		(pin "2"
+			(uuid "27e8f5e3-ce19-4db2-8cea-bb72e4b7192d")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:CONN_EPAPER_8P")
+		(at 270.27 361.825 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c71e1b4-1440-4a6b-90e0-537e2376102a")
+		(property "Reference" "J21"
+			(at 270.27 374.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "e-Paper (steckbar) 8p"
+			(at 270.27 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 270.27 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.27 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 270.27 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "fbe3c663-b29f-4b41-821a-ee5aa3947c02")
+		)
+		(pin "6"
+			(uuid "b6e95b78-8664-4bf9-ad9b-feced5d41e74")
+		)
+		(pin "5"
+			(uuid "fe1d26e8-3add-4e14-a6e5-344c434274f6")
+		)
+		(pin "4"
+			(uuid "2fe64529-8ffd-4e0b-bc44-a6b68f456f7a")
+		)
+		(pin "3"
+			(uuid "41cc1a1d-2230-41e9-a65c-abce1a2ddc82")
+		)
+		(pin "2"
+			(uuid "7920036a-13b2-4d9a-a52c-00b891b9c98d")
+		)
+		(pin "1"
+			(uuid "2a41024d-4d1e-41bb-b52b-861f244e3bfc")
+		)
+		(pin "8"
+			(uuid "f56573ed-9204-49d3-87c8-fb944ad4c25a")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "J21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:CONN_GPS_8P")
+		(at 308.21 361.825 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "24337052-c0c0-4a4f-85f8-0c853c186e43")
+		(property "Reference" "J20"
+			(at 308.21 374.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "GPS 8p"
+			(at 308.21 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 308.21 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 308.21 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 308.21 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "17e5f738-d690-40f5-8ded-d0bcf6581a89")
+		)
+		(pin "3"
+			(uuid "2bf89d31-890c-4511-b458-f6741309b09c")
+		)
+		(pin "4"
+			(uuid "8a213514-f819-4984-b5c9-9555efc9361f")
+		)
+		(pin "5"
+			(uuid "38799083-c2e3-4d59-9721-59feafa98f5f")
+		)
+		(pin "6"
+			(uuid "2b552039-ff54-4155-9f67-a8889a82bda2")
+		)
+		(pin "7"
+			(uuid "5fba9984-8096-485b-ac7d-6c53cbce098a")
+		)
+		(pin "1"
+			(uuid "7742a198-c211-43fa-9aad-2ed043d9ea0e")
+		)
+		(pin "8"
+			(uuid "804efc06-e7b0-4120-9088-f6802fe81b79")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "J20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RaceTracker:CONN_WIFI_8P")
+		(at 346.15 361.825 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "303ca892-e0a9-422c-a29a-ed3541990430")
+		(property "Reference" "J22"
+			(at 346.15 374.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+			)
+		)
+		(property "Value" "WiFi 8p"
+			(at 346.15 348.665 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 346.15 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 346.15 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 346.15 361.825 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e75646e0-b00c-45a3-aa3a-31c7df4b18c1")
+		)
+		(pin "3"
+			(uuid "db1406a8-a359-43b7-8652-15e7d1291ab3")
+		)
+		(pin "4"
+			(uuid "5cdef313-9c91-419c-93f7-f2ca6e60c8a9")
+		)
+		(pin "5"
+			(uuid "b158f2b7-3223-4e91-a1f5-ad26161c2f5a")
+		)
+		(pin "6"
+			(uuid "b4166e8c-90f4-4f1e-9db9-e45040632333")
+		)
+		(pin "7"
+			(uuid "987d18c9-b9e8-470a-a3a3-8633de43d104")
+		)
+		(pin "1"
+			(uuid "c62222be-6d73-4f5a-9be6-97159b15b304")
+		)
+		(pin "8"
+			(uuid "27458b21-2eaf-4cd7-b817-625304ea21ed")
+		)
+		(instances
+			(project "RaceTracker_v2"
+				(path "/"
+					(reference "J22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

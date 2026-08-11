@@ -1,0 +1,26 @@
+{
+  "board": {},
+  "boards": [],
+  "cvpcb": {},
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "RaceTracker_v2.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {},
+  "pcbnew": {},
+  "schematic": {
+    "legacy_lib_dir": "",
+    "legacy_lib_list": []
+  },
+  "sheets": [
+    [
+      "",
+      "Root"
+    ]
+  ],
+  "text_variables": {}
+}

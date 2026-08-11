@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "RaceTracker")(type "KiCad")(uri "${KIPRJMOD}/../../RaceTracker.kicad_prj/RaceTracker.pretty")(options "")(descr "Race Tracker Platine v1 - gemeinsam genutzte Footprints (nur lesen)"))
+)
