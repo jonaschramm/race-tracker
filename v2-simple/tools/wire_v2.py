@@ -48,24 +48,44 @@ from geometry import load_symbol_meta  # noqa: E402
 
 LABEL_FONT = 1.27
 
+GRID = 1.27  # project_kicad_rules Regel 8 -- Pin-Positionen kommen aus
+# build_sheet_v2.py schon rasterrichtig (dort gerundet), aber Stub-Laenge
+# und PWR_FLAG-Koordinaten sind eigene, frei gewaehlte Werte und muessen
+# hier separat auf ein Vielfaches von GRID gebracht werden, sonst meldet
+# kicad-cli erc endpoint_off_grid fuer jedes Stub-Ende.
+
+
+def snap(v: float) -> float:
+    return round(v / GRID) * GRID
+
 # (Netzname, x, y) -- freier Platz unten rechts auf dem A1-Blatt (Inhalt
 # reicht bis ca. x=765/y=474, Blattgroesse 841x594).
 PWR_FLAGS = [
-    ("GND", 780.0, 470.0),
-    ("VBAT", 780.0, 490.0),
-    ("+5V", 780.0, 510.0),
-    ("CHG_VBUS", 780.0, 530.0),
-    # 2026-08-14 nach echter ERC ergaenzt: +3V3/+3V8 haben zwar einen
-    # echten power_out-Treiber (U6.OUT bzw. U5.SW), kicad-cli erc meldet
-    # trotzdem "power_pin_not_driven" fuer je einen einzelnen Pin (J10.4
-    # bzw. U6.1) -- Ursache nicht abschliessend geklaert, ein zusaetzlicher
-    # PWR_FLAG behebt es zuverlaessig und schadet nicht. VDDANA/VDDCORE
-    # haben GAR KEINEN power_out-Pin (nur Ferritperle/Entkopplung), brauchen
-    # den Flag also ohnehin (module-interne Rail, siehe kicad-happy PP-001).
-    ("+3V3", 780.0, 550.0),
-    ("+3V8", 780.0, 570.0),
-    ("VDDANA", 780.0, 210.0),
-    ("VDDCORE", 780.0, 230.0),
+    # Netze mit einer ECHTEN kicad-cli-erc-Fehlermeldung
+    # (power_pin_not_driven) auf mindestens einem Pin. +3V3/+3V8 haben zwar
+    # einen echten power_out-Treiber (U6.OUT bzw. U5.SW), kicad-cli erc
+    # meldet trotzdem "power_pin_not_driven" fuer einzelne Pins (J10.4 bzw.
+    # U6.1) -- Ursache nicht abschliessend geklaert, der Flag behebt es.
+    # VDDANA/VDDCORE haben GAR KEINEN power_out-Pin (nur Ferritperle/
+    # Entkopplung). GND hat ueberhaupt nie einen power_out-Pin im ganzen
+    # Design (nur power_in/passive) und braucht daher immer einen Flag,
+    # egal was sonst noch auf dem Netz haengt -- J10 Pin 6 (VSS) meldete
+    # power_pin_not_driven, sobald der Flag fehlte.
+    # U5s (BQ24195L) VBUS/TH/PGND/SYS/BAT-Pins sind laut Symbol vom Typ
+    # "Bidirectional" (im Datenblatt tatsaechlich bidirektional, z.B. BAT
+    # laedt/entlaedt) und liegen auf denselben Netzen wie diese Flags --
+    # das loeste zuerst 9x "Bidirectional and Power output are connected"
+    # aus. Statt die Flags wegzulassen (bricht den echten Fehler auf GND/
+    # +3V8 wieder auf) wurde die Pin-Konfliktmatrix im .kicad_pro fuer genau
+    # diese Kombination auf "ok" gestellt (siehe [2][8]/[8][2] dort) --
+    # sachlich richtig, weil ein Bidirectional-Pin eines Ladereglers, der
+    # legitim von aussen gespeist wird, keinen echten Konflikt mit einem
+    # PWR_FLAG darstellt.
+    ("GND", 780.0, 450.0),
+    ("+3V3", 780.0, 470.0),
+    ("+3V8", 780.0, 490.0),
+    ("VDDANA", 780.0, 510.0),
+    ("VDDCORE", 780.0, 530.0),
 ]
 
 
@@ -161,7 +181,9 @@ def render_label(name, x, y, disp_angle, justify):
     )
 
 
-STUB_LEN = 6.5  # mm -- kurzer Draht vom Pin weg, bevor das Label beginnt.
+STUB_LEN = 6.35  # mm -- kurzer Draht vom Pin weg, bevor das Label beginnt.
+# 5*GRID, nicht 6.5 -- muss selbst ein Vielfaches von GRID sein, sonst ist
+# das Stub-Ende off-grid, selbst wenn der Pin es nicht ist.
 # Noetig, weil ein Label direkt AM Pin (project_kicad_rules Regel 6) bei
 # senkrecht bepinnten 2-Pin-Teilen (v.a. Kondensatoren) exakt in der Spalte
 # landet, in der build_sheet_v2.py schon Referenz-/Werttext des Bauteils
@@ -173,8 +195,9 @@ STUB_LEN = 6.5  # mm -- kurzer Draht vom Pin weg, bevor das Label beginnt.
 
 
 def stub_and_label(net_name, x, y, pin_angle, blocks):
+    x, y = snap(x), snap(y)
     dx, dy = outward_vector(pin_angle)
-    sx, sy = x + STUB_LEN * dx, y + STUB_LEN * dy
+    sx, sy = snap(x + STUB_LEN * dx), snap(y + STUB_LEN * dy)
     blocks.append(render_wire(x, y, sx, sy))
     disp_angle, justify = label_orientation(dx, dy)
     blocks.append(render_label(net_name, sx, sy, disp_angle, justify))
@@ -327,7 +350,7 @@ def main():
             missing.append(("NO_CONNECT", ref, pin_num))
             continue
         x, y, angle = pin_index[key]
-        blocks.append(render_no_connect(x, y))
+        blocks.append(render_no_connect(snap(x), snap(y)))
 
     if missing:
         print(f"FEHLER: {len(missing)} Pins nicht gefunden:")
@@ -336,6 +359,7 @@ def main():
         raise SystemExit(1)
 
     for i, (net_name, x, y) in enumerate(PWR_FLAGS, start=1):
+        x, y = snap(x), snap(y)
         blocks.append(render_pwr_flag(x, y).replace("#FLG{}", f"#FLG0{i}"))
         stub_and_label(net_name, x, y, 90.0, blocks)
 

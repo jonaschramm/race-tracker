@@ -70,6 +70,19 @@ MAX_ROW_WIDTH = {
 }
 
 
+GRID = 1.27  # KiCad-Verbindungsraster -- project_kicad_rules Regel 8: alles
+# muss darauf liegen, sonst "sieht verbunden aus, ist es aber nicht" (bzw.
+# hier: kicad-cli erc meldet endpoint_off_grid für jeden Pin/jedes Wire-Ende
+# daneben). Bauteil-Ursprung wird VOR dem Schreiben ins File gerundet, nicht
+# die einzelnen Pins -- da lokale Pin-Offsets in den verwendeten Symbolen
+# selbst schon Vielfache von GRID sind, reicht das, um am Pin exakt auf dem
+# Raster zu landen.
+
+
+def snap(v: float) -> float:
+    return round(v / GRID) * GRID
+
+
 def fmt(v: float) -> str:
     s = f"{v:.3f}".rstrip("0").rstrip(".")
     if s in ("", "-0"):
@@ -320,8 +333,8 @@ def main():
         for inst in group_layout[g["name"]]["instances"]:
             part = inst["part"]
             meta = inst["meta"]
-            abs_x = gx + inst["x"]
-            abs_y = gy + inst["y"]
+            abs_x = snap(gx + inst["x"])
+            abs_y = snap(gy + inst["y"])
             symbol_blocks.append(render_instance(
                 part["lib_id"], part["ref"], part["value"], part["footprint"],
                 abs_x, abs_y, inst["unit"], inst["ref_off"], inst["val_off"],
