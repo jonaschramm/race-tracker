@@ -31,11 +31,14 @@ HEADER_FONT = 2.5
 CHAR_W_FACTOR = 1.0   # bewusst grosszuegig, um Text-Ueberlappungen zu vermeiden
 LINE_H_FACTOR = 1.6
 
-GAP_INTRA = 10.0       # Mindestabstand zwischen Bauteilkoerpern in einer Gruppe
+GAP_INTRA = 23.0       # Mindestabstand zwischen Bauteilkoerpern in einer Gruppe
+                        # (bewusst grosszuegiger als reine Platzierung noetig haette:
+                        # Netz-Labels beider Nachbarn muessen hier ohne Ueberlappung
+                        # nach aussen wachsen koennen, siehe wire_v2.py)
 GAP_GROUP_X = 28.0      # Mindestabstand zwischen Gruppen (horizontal)
 GAP_GROUP_Y = 32.0      # Mindestabstand zwischen Baendern (vertikal)
 HEADER_CLEARANCE = 16.0  # Platz fuer die Gruppenueberschrift ueber den Bauteilen
-SUBUNIT_GAP = 12.0      # Abstand zwischen den beiden Koerpern eines Mehrfach-Symbols (Q2)
+SUBUNIT_GAP = 20.0      # Abstand zwischen den beiden Koerpern eines Mehrfach-Symbols (U1/Q2)
 
 PAD_EXTRA = {"U1": 45.0, "U5": 40.0}  # Freiraum-Ring um die grossen ICs
 

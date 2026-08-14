@@ -24,7 +24,7 @@ GROUPS = [
     ("Quarz / RTC", ["Y1", "C3", "C4"]),
     ("Reset", ["PB1", "R3", "R6", "R5", "R10", "C2"]),
     ("I2C-Pullups", ["R13", "R14"]),
-    ("Programmierung", ["J12", "R2"]),
+    ("Programmierung", ["J12", "R2", "R4"]),
     ("MicroSD", ["J10", "C43", "C44", "R40", "R43"]),
     ("Status-LEDs", ["DL10", "DL11", "DL12", "R44", "R45", "R46"]),
 ]

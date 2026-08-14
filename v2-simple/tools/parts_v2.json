@@ -650,6 +650,15 @@
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
           "manufacturer": ""
+        },
+        {
+          "ref": "R4",
+          "sheet": "MCU_Radio.kicad_sch",
+          "lib_id": "RaceTracker:R-0402",
+          "value": "1k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "mpn": "",
+          "manufacturer": ""
         }
       ]
     },
