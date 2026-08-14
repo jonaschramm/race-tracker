@@ -12,20 +12,20 @@ V1_DIR = Path(__file__).resolve().parents[2] / "RaceTracker.kicad_prj"
 OUT_FILE = Path(__file__).resolve().parent / "parts_v2.json"
 
 GROUPS = [
-    ("USB-C Eingang", ["J1", "D1", "R37", "R38", "R1", "C1", "F1"]),
+    ("USB-C Eingang", ["J1", "D1", "R37", "R38", "R1", "C1", "F1", "D4", "C34"]),
     ("LiPo Eingang", ["J7", "F2", "D2"]),
     ("Power-Path", ["Q2", "D3", "R27", "DL3"]),
     ("Laderegler BQ24195L", ["U5", "L2", "C12", "C13", "C14", "C15", "C16",
                              "C19", "C20", "C22", "C32", "R28", "R29", "R30",
-                             "R24", "R23", "R25", "R26", "R19", "Q3", "DL2"]),
+                             "R24", "R23", "R25", "R26", "R19", "Q3", "DL2", "R21"]),
     ("3V3-Versorgung", ["U6"]),
     ("SAMD21 + Entkopplung", ["U1", "C17", "C18", "C21", "C24", "C25", "C26",
                               "L3", "C23", "C27", "C5", "C7", "C6", "R8", "R9"]),
     ("Quarz / RTC", ["Y1", "C3", "C4"]),
     ("Reset", ["PB1", "R3", "R6", "R5", "R10", "C2"]),
     ("I2C-Pullups", ["R13", "R14"]),
-    ("Programmierung", ["J12"]),
-    ("MicroSD", ["J10", "C43", "C44", "R40"]),
+    ("Programmierung", ["J12", "R2"]),
+    ("MicroSD", ["J10", "C43", "C44", "R40", "R43"]),
     ("Status-LEDs", ["DL10", "DL11", "DL12", "R44", "R45", "R46"]),
 ]
 

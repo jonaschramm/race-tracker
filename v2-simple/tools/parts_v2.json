@@ -65,6 +65,24 @@
           "footprint": "Fuse:Fuse_0603_1608Metric",
           "mpn": "",
           "manufacturer": ""
+        },
+        {
+          "ref": "D4",
+          "sheet": "Power.kicad_sch",
+          "lib_id": "RaceTracker:PMEG6020AELRX",
+          "value": "PESD5V0S1BA TVS VBUS",
+          "footprint": "Diode_SMD:D_SOD-323",
+          "mpn": "PESD5V0S1BA",
+          "manufacturer": "Nexperia"
+        },
+        {
+          "ref": "C34",
+          "sheet": "Power.kicad_sch",
+          "lib_id": "RaceTracker:C-0402",
+          "value": "1uF VBUS decoupling",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "mpn": "",
+          "manufacturer": ""
         }
       ]
     },
@@ -330,6 +348,15 @@
           "lib_id": "RaceTracker:LED-0603",
           "value": "orange Laden",
           "footprint": "RaceTracker:LED_0603_AK",
+          "mpn": "",
+          "manufacturer": ""
+        },
+        {
+          "ref": "R21",
+          "sheet": "MCU_Radio.kicad_sch",
+          "lib_id": "RaceTracker:R-0402",
+          "value": "10k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
           "manufacturer": ""
         }
@@ -614,6 +641,15 @@
           "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
           "mpn": "",
           "manufacturer": ""
+        },
+        {
+          "ref": "R2",
+          "sheet": "MCU_Radio.kicad_sch",
+          "lib_id": "RaceTracker:R-0402",
+          "value": "39R SWD nRESET",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "mpn": "",
+          "manufacturer": ""
         }
       ]
     },
@@ -652,6 +688,15 @@
           "sheet": "Sensors_Storage.kicad_sch",
           "lib_id": "RaceTracker:R-0402",
           "value": "10k (SD_CS Pullup)",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "mpn": "",
+          "manufacturer": ""
+        },
+        {
+          "ref": "R43",
+          "sheet": "Sensors_Storage.kicad_sch",
+          "lib_id": "RaceTracker:R-0402",
+          "value": "10k (Card-Detect)",
           "footprint": "Resistor_SMD:R_0402_1005Metric",
           "mpn": "",
           "manufacturer": ""
