@@ -233,7 +233,10 @@ J2 = add("J2", "CONN2", "Battery", 348, 165, angle=0,
           footprint="Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal")
 U2 = add("U2", "MCP73831", "MCP73831T-2ACI/OT", 320, 155)
 R3 = add("R3", "R", "2k", 300, 148, angle=0)           # PROG (500 mA charge)
-C2 = add("C2", "C", "1uF", 315, 140, angle=0, footprint=C_FP)   # charger VDD decoupling
+C2 = add("C2", "C", "4.7uF", 315, 140, angle=0, footprint=C_FP)   # charger VDD decoupling --
+                                                                   # MCP73831 datasheet Sec 3.1:
+                                                                   # "Bypass to VSS with a minimum
+                                                                   # of 4.7 uF" (1uF was too small)
                                                                  # (own X lane vs R3 at 300/299.72)
 C3 = add("C3", "C", "4.7uF", 340, 155, angle=0, footprint=C_FP)  # charger VBAT decoupling
 D2 = add("D2", "LED", "Charging", 300, 162, angle=0)

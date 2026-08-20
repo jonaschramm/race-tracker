@@ -56,7 +56,7 @@ VALUES = {
     "U1": "ESP32-S3-WROOM-1-N8", "R8": "10k", "R9": "10k", "R10": "4.7k", "R11": "4.7k",
     "R12": "10k", "R13": "10k", "R14": "10k", "R1": "5.1k", "R2": "5.1k", "R3": "2k",
     "R4": "1k", "R5": "1k", "R6": "1M", "R7": "1M", "C9": "1uF", "C10": "100nF",
-    "C1": "1uF", "C2": "1uF", "C3": "4.7uF", "C4": "1uF", "C5": "1uF", "C6": "100nF",
+    "C1": "1uF", "C2": "4.7uF", "C3": "4.7uF", "C4": "1uF", "C5": "1uF", "C6": "100nF",
     "C8": "100nF", "C7": "22uF", "SW2": "RESET", "SW3": "BOOT", "SW1": "PWR",
     "J1": "USB-C", "J2": "Battery", "J3": "Qwiic GPS (I2C)", "J4": "microSD",
     "J5": "UART Debug", "D1": "USBLC6-2SC6", "D4": "PESD5V0S1UL", "D2": "Charging",
