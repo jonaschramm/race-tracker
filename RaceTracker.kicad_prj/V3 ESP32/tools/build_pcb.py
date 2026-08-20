@@ -18,7 +18,7 @@ import xml.etree.ElementTree as ET
 FP_ROOT = "/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints"
 NETLIST_XML = "/tmp/v3_netlist.xml"
 OUT_PCB = ("/Users/jonaschramm/Desktop/RaceTracker_KiCad_v14/RaceTracker.kicad_prj/"
-           "V3 ESP32/New Version with WROOM/New Version with WROOM.kicad_pcb")
+           "V3 ESP32/RaceTracker_v3/RaceTracker_v3.kicad_pcb")
 
 BOARD_W = 70.0
 BOARD_H = 97.0  # bottom zone (14 refs: EN/BOOT + I2C/SPI connectors+pullups)

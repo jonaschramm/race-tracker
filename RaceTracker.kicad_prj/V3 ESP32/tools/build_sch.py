@@ -7,9 +7,9 @@ import uuid
 from libextract import get_flat_symbol, get_pins
 from geom import pin_abs
 
-PROJECT_NAME = "New Version with WROOM"
+PROJECT_NAME = "RaceTracker_v3"
 OUT_PATH = ("/Users/jonaschramm/Desktop/RaceTracker_KiCad_v14/RaceTracker.kicad_prj/"
-            "V3 ESP32/New Version with WROOM/New Version with WROOM.kicad_sch")
+            "V3 ESP32/RaceTracker_v3/RaceTracker_v3.kicad_sch")
 
 GRID = 1.27
 

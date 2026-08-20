@@ -264,7 +264,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "New Version with WROOM.kicad_pro",
+    "filename": "RaceTracker_v3.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -313,8 +313,8 @@
     "legacy_lib_list": [],
     "top_level_sheets": [
       {
-        "filename": "New Version with WROOM.kicad_sch",
-        "name": "New Version with WROOM",
+        "filename": "RaceTracker_v3.kicad_sch",
+        "name": "RaceTracker_v3",
         "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ],
