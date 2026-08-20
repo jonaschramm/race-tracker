@@ -44,7 +44,8 @@ PART_LIB = {
                     nickname="Connector_Generic", footprint=None),  # footprint set per-instance
     "CONN2": dict(libfile="Connector_Generic.kicad_sym", sym="Conn_01x02",
                     nickname="Connector_Generic", footprint=None),
-    "R": dict(libfile="Device.kicad_sym", sym="R", nickname="Device", footprint=None),
+    "R": dict(libfile="Device.kicad_sym", sym="R", nickname="Device",
+               footprint="Resistor_SMD:R_0603_1608Metric"),
     "C": dict(libfile="Device.kicad_sym", sym="C", nickname="Device", footprint=None),
     "LED": dict(libfile="Device.kicad_sym", sym="LED", nickname="Device",
                  footprint="LED_SMD:LED_0603_1608Metric"),
