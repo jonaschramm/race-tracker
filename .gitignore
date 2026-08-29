@@ -29,3 +29,5 @@ fp-info-cache
 # kicad-happy Analyse-Cache und Datenblätter (regenerierbar)
 analysis/
 datasheets/
+# ...außer bewusst im Projekt abgelegten Referenz-Datenblättern (kein Cache)
+!RaceTracker.kicad_prj/V3 ESP32/RaceTracker_v3/datasheets/
