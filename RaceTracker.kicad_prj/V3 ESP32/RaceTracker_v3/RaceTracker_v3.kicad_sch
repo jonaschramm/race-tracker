@@ -11463,6 +11463,124 @@
 		)
 		(uuid "71363e7c-479b-4d51-8d28-a93a39225a4d")
 	)
+	(symbol
+		(lib_id "Device:C")
+		(at 462.28 127.0 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a1ed552-0fd6-4960-af7c-e37238591b41")
+		(property "Reference" "C13"
+			(at 464.82 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 464.82 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 462.28 127.0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 462.28 127.0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 462.28 127.0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d175c50-f3d0-4110-bfeb-2039c9585727")
+		)
+		(pin "2"
+			(uuid "a5b503f1-69fb-46c0-8a28-fa0343ab2730")
+		)
+		(instances
+			(project "RaceTracker_v3"
+				(path "/4ed299f8-94b7-4355-9e61-0164201a9634"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 462.28 123.19) (xy 462.28 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69dbd0ac-6bbc-4a87-b0dd-c4bec8bd12dc")
+	)
+	(label "+3V3"
+		(at 462.28 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2135f14-53e9-4812-8b48-117979f81bf3")
+	)
+	(wire
+		(pts
+			(xy 462.28 130.81) (xy 462.28 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01681c3c-7a36-4d7a-b7ce-3c1ac74efc7c")
+	)
+	(label "GND"
+		(at 462.28 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34c25015-1fa2-450e-8adc-fcab09bb47d5")
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
