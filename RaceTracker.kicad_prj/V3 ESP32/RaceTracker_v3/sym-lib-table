@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "RaceTracker_v3")(type "KiCad")(uri "${KIPRJMOD}/RaceTracker_v3.kicad_sym")(options "")(descr "RaceTracker V3 projektlokale Symbole (Teile ohne offizielle KiCad-Bibliothek)"))
+)
