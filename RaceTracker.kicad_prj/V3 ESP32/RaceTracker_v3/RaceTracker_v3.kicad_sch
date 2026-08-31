@@ -6320,16 +6320,6 @@
 		)
 		(uuid "0dc6a78b-6fc3-4d37-97c4-ae4b6c441829")
 	)
-	(label "USB_DP"
-		(at 252.73 138.43 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0e8bab24-d2fb-4899-ae89-86d9905ca6ef")
-	)
 	(label "+VBAT_SYS"
 		(at 284.48 187.96 180)
 		(effects
@@ -6719,6 +6709,16 @@
 			(justify left)
 		)
 		(uuid "666ca897-3373-4e2e-a689-b0971abf3868")
+	)
+	(wire
+		(pts
+			(xy 252.73 139.7) (xy 252.73 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "677c1418-0f18-4f83-a1d0-e57bcda4dc01")
 	)
 	(label "USB_DP"
 		(at 252.73 139.7 0)
