@@ -398,7 +398,7 @@
 	(footprint "SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile"
 		(layer "F.Cu")
 		(uuid "191c9418-3be8-44e2-a25b-555fa7823ebc")
-		(at 54.195 76.5125)
+		(at 54.695 73.0125)
 		(descr "1x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 6.7x4.1mm (see e.g. https://www.ctscorp.com/wp-content/uploads/209-210.pdf), LowProfile")
 		(tags "DIP Switch SPST Slide 7.62mm 300mil LowProfile")
 		(property "Reference" "SW1"
@@ -687,7 +687,7 @@
 			)
 		)
 		(point
-			(at 58.005 76.5125)
+			(at 58.505 73.0125)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "e92f5a77-c7f8-42df-a517-08e355e3cca8")
@@ -1354,7 +1354,7 @@
 	(footprint "microSD_HC_Molex_104031-0811"
 		(layer "F.Cu")
 		(uuid "33dfcb8b-a9e3-4911-a1a4-ab4a132c23f0")
-		(at 86 82.5 90)
+		(at 86 79.5 90)
 		(descr "1.10mm Pitch microSD Memory Card Connector, Surface Mount, Push-Pull Type, 1.42mm Height, with Detect Switch (https://www.molex.com/pdm_docs/sd/1040310811_sd.pdf)")
 		(tags "microSD SD molex")
 		(property "Reference" "J4"
@@ -2305,7 +2305,7 @@
 	(footprint "PinHeader_1x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "7b89d415-e06f-4958-9f0f-74028b2c4f3d")
-		(at 56.61 87 90)
+		(at 57.84 85 90)
 		(descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x08 2.54mm single row")
 		(property "Reference" "J6"
@@ -3269,7 +3269,7 @@
 	(footprint "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "bce9799f-cfc6-47f9-80a2-ec93f84858ca")
-		(at 48 82 -90)
+		(at 47.5 76.5 -90)
 		(descr "JST SH series connector, SM04B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf)")
 		(tags "connector JST SH horizontal")
 		(property "Reference" "J3"
@@ -7799,7 +7799,7 @@
 	(footprint "R_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "4a568707-7755-4d6f-9abc-c278ec38cb08")
-		(at 52.95 83.5)
+		(at 53.5 79 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R11"
@@ -7866,16 +7866,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.237258 -0.5225)
-			(end 0.237258 -0.5225)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "6678e7f2-4a2c-4c46-8290-34fef0a40eeb")
-		)
-		(fp_line
 			(start -0.237258 0.5225)
 			(end 0.237258 0.5225)
 			(stroke
@@ -7884,6 +7874,16 @@
 			)
 			(layer "B.SilkS")
 			(uuid "244273f6-c47a-423b-9c1e-92adbfc01599")
+		)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "6678e7f2-4a2c-4c46-8290-34fef0a40eeb")
 		)
 		(fp_rect
 			(start -1.48 0.73)
@@ -7920,7 +7920,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.825 0)
+			(at -0.825 0 180)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
@@ -7928,7 +7928,7 @@
 			(uuid "d10237cc-56ac-4384-910a-5ef1b175d650")
 		)
 		(pad "2" smd roundrect
-			(at 0.825 0)
+			(at 0.825 0 180)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
@@ -8407,7 +8407,7 @@
 	(footprint "C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "7cde4f0f-b250-49ed-a5c7-31fea13643af")
-		(at 56.5 56.4 180)
+		(at 57.5 55 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C10"
@@ -8863,7 +8863,7 @@
 	(footprint "C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "8e2adacc-96a1-4496-aa50-e19334045556")
-		(at 48.5 60.4 -90)
+		(at 47.95 57 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C4"
@@ -9015,7 +9015,7 @@
 	(footprint "C_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "8e995c5b-6b5e-4747-a2c1-a03baf297fe0")
-		(at 56.5 52.35)
+		(at 57.5 51)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C7"
@@ -9167,7 +9167,7 @@
 	(footprint "R_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "907673a3-aaf6-4cc1-b1d0-c1fca12126ef")
-		(at 88.5 85.325 -90)
+		(at 89 82.825 -90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R14"
@@ -9471,7 +9471,7 @@
 	(footprint "R_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "a98e9b28-0784-42a9-b844-1ffc029f27fc")
-		(at 52.95 81.5)
+		(at 53.5 77 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R10"
@@ -9538,16 +9538,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.237258 -0.5225)
-			(end 0.237258 -0.5225)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "1b57fe60-5cc8-45f7-a890-00a3b90e6aa2")
-		)
-		(fp_line
 			(start -0.237258 0.5225)
 			(end 0.237258 0.5225)
 			(stroke
@@ -9556,6 +9546,16 @@
 			)
 			(layer "B.SilkS")
 			(uuid "dc712768-fc88-443d-9b45-28b03dc81590")
+		)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "1b57fe60-5cc8-45f7-a890-00a3b90e6aa2")
 		)
 		(fp_rect
 			(start -1.48 0.73)
@@ -9592,7 +9592,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.825 0)
+			(at -0.825 0 180)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
@@ -9600,7 +9600,7 @@
 			(uuid "c32bee6d-c605-4b07-b8f0-0dd7f5d86844")
 		)
 		(pad "2" smd roundrect
-			(at 0.825 0)
+			(at 0.825 0 180)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
@@ -9927,7 +9927,7 @@
 	(footprint "C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "cb9f38f9-e3ec-495a-9b2d-e3b5203a9b0e")
-		(at 56.5 58.4 180)
+		(at 57.5 53 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C9"
@@ -10079,7 +10079,7 @@
 	(footprint "C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "cc94d7ea-9ae3-47ce-81c0-5865bddbcf7f")
-		(at 80.275 66.775 180)
+		(at 78.8 66.629999 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C6"
@@ -10382,7 +10382,7 @@
 	)
 	(gr_rect
 		(start 43.95 28.5)
-		(end 93 89.5)
+		(end 93 87)
 		(stroke
 			(width 0.15)
 			(type default)
