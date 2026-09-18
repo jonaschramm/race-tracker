@@ -1,4 +1,6 @@
-# RaceTracker
+<p align="center">
+  <img src="assets/racetracker-logo.png" alt="RaceTracker" width="600">
+</p>
 
 Custom PCB data logger for motorcycle racing: GPS position + IMU motion data,
 logged to a microSD card, with an e-Paper status display. Built around an
