@@ -31,3 +31,15 @@ analysis/
 datasheets/
 # ...außer bewusst im Projekt abgelegten Referenz-Datenblättern (kein Cache)
 !RaceTracker.kicad_prj/V3 ESP32/RaceTracker_v3/datasheets/
+
+# kicad-happy BOM — Bestell-Dateien sind regenerierbar, bom.csv nicht
+bom/orders/
+
+# Editor-Lokalverlauf (z.B. VS-Code "Local History"-Extension) — nie einchecken,
+# war versehentlich als kaputte Submodule-Referenz getrackt (siehe Cleanup-Commit)
+.history/
+
+# Python-Cache und Wiederherstellungs-Backups aus Tool-Skripten
+__pycache__/
+*.pyc
+_restore_backup_*/
