@@ -63,7 +63,8 @@ the schematic open.
 </p>
 
 Rendered straight from the board file (`kicad-cli pcb render`). A ready-to-embed,
-interactive 3D model (Draco-compressed GLB, 283 KB) lives at
+interactive 3D model (quantized GLB, 3.4 MB — Draco was tried first but needs an
+external decoder that not every embedding context can reach) lives at
 [`RaceTracker.kicad_prj/V3 ESP32/RaceTracker_v3/3d/RaceTracker_v3.glb`](RaceTracker.kicad_prj/V3%20ESP32/RaceTracker_v3/3d/RaceTracker_v3.glb) —
 drop it into a [`<model-viewer>`](https://modelviewer.dev/) tag on any webpage to let
 visitors spin the board around (also works in AR on phones). More stills in
