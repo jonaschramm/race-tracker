@@ -55,6 +55,20 @@ Pin-header connectors (J3, J5, J6) have their pin functions silkscreened
 next to each pin so nothing gets miswired when the board is in hand without
 the schematic open.
 
+### 3D preview
+
+<p align="center">
+  <img src="assets/renders/iso_top.png" alt="RaceTracker V3 - component side" width="48%">
+  <img src="assets/renders/iso_bottom.png" alt="RaceTracker V3 - logo side" width="48%">
+</p>
+
+Rendered straight from the board file (`kicad-cli pcb render`). A ready-to-embed,
+interactive 3D model (Draco-compressed GLB, 283 KB) lives at
+[`RaceTracker.kicad_prj/V3 ESP32/RaceTracker_v3/3d/RaceTracker_v3.glb`](RaceTracker.kicad_prj/V3%20ESP32/RaceTracker_v3/3d/RaceTracker_v3.glb) —
+drop it into a [`<model-viewer>`](https://modelviewer.dev/) tag on any webpage to let
+visitors spin the board around (also works in AR on phones). More stills in
+`assets/renders/`.
+
 ### Open items
 
 Not yet done — flagging so nothing is assumed finished:
